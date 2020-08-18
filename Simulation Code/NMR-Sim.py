@@ -1,10 +1,34 @@
 # -*- coding: utf-8 -*-
+""" 
+This code simulates the NMR device in the ARTS-Lab
+
+"""
+
+from IPython import get_ipython
+get_ipython().magic('reset -sf') 
+
 
 import numpy as np
 from scipy.signal import butter, lfilter, freqz
 import matplotlib.pyplot as plt
-fig, axs = plt.subplots(3,3)#establish plot windows
 
+plt.close('all')
+
+#%% define the custom functions
+
+#lowpass filter established
+def butter_lowpass(cutoff, fs, order=5):
+    nyq = 0.5 * fs
+    normal_cutoff = cutoff / nyq
+    b, a = butter(order, normal_cutoff, btype='low', analog=False)
+    return b, a
+
+def butter_lowpass_filter(data, cutoff, fs, order=5):
+    b, a = butter_lowpass(cutoff, fs, order=order)
+    y = lfilter(b, a, data)
+    return y
+
+#%% run the code and plot the results.
 
 # Filter requirements.
 T = .0001                   # window
@@ -54,18 +78,10 @@ lcfid = RF+lc
 M = mA/2.14*100;
 mSig = M*(np.cos((wO+wA)*t)+np.cos((wO-wA)*t))
 
-#lowpass filter established
-def butter_lowpass(cutoff, fs, order=5):
-    nyq = 0.5 * fs
-    normal_cutoff = cutoff / nyq
-    b, a = butter(order, normal_cutoff, btype='low', analog=False)
-    return b, a
 
-def butter_lowpass_filter(data, cutoff, fs, order=5):
-    b, a = butter_lowpass(cutoff, fs, order=order)
-    y = lfilter(b, a, data)
-    return y
+#%% Plot the results
 
+fig, axs = plt.subplots(3,3)#establish plot windows
 # Filter the data, and plot both the original and filtered signals.
 y = butter_lowpass_filter(mSig, cutoff, fs, order)
 axs[0,0].plot(t1,LO1)

@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.5)-3")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.4)-1")
 
   (general
     (thickness 1.6)
@@ -19,8 +19,8 @@
   )
 
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -348,7 +348,7 @@
     )
   )
 
-  (gr_text "Diode Gate 2" (at 142.494 102.87) (layer B.SilkS)
+  (gr_text "Diode Gate 2\n ARTS-Lab" (at 142.621 103.2764) (layer B.SilkS)
     (effects (font (size 0.992 0.992) (thickness 0.1476)) (justify mirror))
   )
   (gr_line (start 130.302 107.95) (end 130.302 97.79) (layer Edge.Cuts) (width 0.05) (tstamp 5F7C349A))

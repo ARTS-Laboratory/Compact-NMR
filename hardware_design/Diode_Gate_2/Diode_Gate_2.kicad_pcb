@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 5)
-    (tracks 8)
+    (tracks 10)
     (zones 0)
     (modules 4)
     (nets 3)
@@ -19,8 +19,8 @@
   )
 
   (layers
-    (0 F.Cu signal hide)
-    (31 B.Cu signal hide)
+    (0 F.Cu signal)
+    (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -364,6 +364,8 @@
   (segment (start 140.97 100.19137) (end 140.97 99.06) (width 1.016) (layer F.Cu) (net 1))
   (segment (start 138.29137 102.87) (end 140.97 100.19137) (width 1.016) (layer F.Cu) (net 1))
   (segment (start 134.874 102.87) (end 138.29137 102.87) (width 1.016) (layer F.Cu) (net 1))
+  (via (at 140.97 102.616) (size 0.508) (drill 0.254) (layers F.Cu B.Cu) (net 2))
+  (via (at 143.764 102.616) (size 0.508) (drill 0.254) (layers F.Cu B.Cu) (net 2))
 
   (zone (net 2) (net_name GND) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
     (connect_pads (clearance 0.254))

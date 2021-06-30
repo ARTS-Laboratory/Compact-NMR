@@ -6,8 +6,9 @@ A compact nuclear magnetic resonance (NMR) device for:
 * In situ detection of contaminants in flood waters
 
 
-![Image of NMR](images/NMR_setup_V1.jpg)
-![Image of NMR](images/NMR_schematic_V1.png)
+![Image of NMR](images/NMR_setup_V2.png)
+![Image of NMR](images/NMR_schematic_V2.png)
+![Image of NMR](images/NMR_Probe_V2.png)
 
 
 

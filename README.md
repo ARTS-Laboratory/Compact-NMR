@@ -1,4 +1,4 @@
-# NMR
+# Compact-NMR (cNMR)
 
 A compact nuclear magnetic resonance (NMR) device for: 
 * In situ fuel characterization 

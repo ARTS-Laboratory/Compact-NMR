@@ -130,8 +130,6 @@ F 3 "www.minicircuits.com/pdfs/ADE-6.pdf" H 5175 1125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 2750 4650 2850
-Wire Wire Line
 	4150 2500 4150 3150
 $Comp
 L power:GND #PWR02
@@ -239,18 +237,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR04
 U 1 1 60DE8E11
-P 5000 2700
-F 0 "#PWR04" H 5000 2450 50  0001 C CNN
-F 1 "GND" H 5005 2527 50  0000 C CNN
-F 2 "" H 5000 2700 50  0001 C CNN
-F 3 "" H 5000 2700 50  0001 C CNN
-	1    5000 2700
+P 5350 2650
+F 0 "#PWR04" H 5350 2400 50  0001 C CNN
+F 1 "GND" H 5355 2477 50  0000 C CNN
+F 2 "" H 5350 2650 50  0001 C CNN
+F 3 "" H 5350 2650 50  0001 C CNN
+	1    5350 2650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4850 2550 5000 2550
-Wire Wire Line
-	5000 2550 5000 2700
 $Comp
 L Connector:Conn_Coaxial J5
 U 1 1 60DEB4B7
@@ -390,4 +384,27 @@ F 3 "~" H 8600 2400 50  0001 C CNN
 	1    8600 2400
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	4650 2750 4650 2850
+$Comp
+L pspice:C C5
+U 1 1 60E4CBF7
+P 4900 2750
+F 0 "C5" H 5078 2796 50  0000 L CNN
+F 1 "C" H 5078 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder" H 4900 2750 50  0001 C CNN
+F 3 "~" H 4900 2750 50  0001 C CNN
+	1    4900 2750
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4650 2750
+Wire Wire Line
+	5350 2550 5350 2650
+Wire Wire Line
+	4850 2550 5150 2550
+Wire Wire Line
+	5150 2550 5150 2750
+Connection ~ 5150 2550
+Wire Wire Line
+	5150 2550 5350 2550
 $EndSCHEMATC

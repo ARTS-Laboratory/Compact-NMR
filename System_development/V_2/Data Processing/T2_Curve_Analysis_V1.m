@@ -1,11 +1,11 @@
-%% Parameters & Curve Extraction
+ %% Parameters & Curve Extraction
 clc
 clear all
-file1 = '2021-09-23 18-21-36 Oscilloscope - Waveform Data';
-file2 = '2021-09-21 15-27-32 Oscilloscope - Waveform Data - Toluene';
-file3 = '2021-09-22 09-51-59 Oscilloscope - Waveform Data - Toluene';
-file4 = '2021-09-22 15-17-04 Oscilloscope - Waveform Data - Toluene';
-file5 = '2021-09-23 14-16-37 Oscilloscope - Waveform Data - Toluene';
+file1 = '2021-10-25 14-04-43 Oscilloscope - Waveform Data';
+file2 = '2021-10-25 14-05-18 Oscilloscope - Waveform Data';
+file3 = '2021-10-25 14-05-46 Oscilloscope - Waveform Data';
+file4 = '2021-10-25 14-06-44 Oscilloscope - Waveform Data';
+file5 = '2021-10-25 14-07-10 Oscilloscope - Waveform Data';
 size = 495;
 d = 1.25;
 t2 = (0:d/((size-10)*10):d)';
@@ -22,13 +22,13 @@ X3 = Z3(6501:389949,1);
 X4 = Z4(6501:389949,1);
 X5 = Z5(6501:389949,1);
 Y1 = zeros(size-9,1);
-Y1a = zeros(size-9,1);
 Y2 = zeros(size-9,1);
 Y3 = zeros(size-9,1);
 Y4 = zeros(size-9,1);
 Y5 = zeros(size-9,1);
 i = 400;
 j = 754;
+
 % Grabs the peak voltage of every echo %
 for c = 10:size
     if c == 1
@@ -130,25 +130,27 @@ meanOut(:,5) = m4(130:4851);
 meanOut(:,6) = m5(130:4851);
 
 %% Plots
-tiledlayout(1,2)
-nexttile
-plot(t,Y1,'b',t,Y2,'k',t,Y3,'r',t,Y4,'m',t,Y5,'c')
+%tiledlayout(1,2)
+%nexttile
+plot(t,Y1,'b',t,Y2,'k',t,Y3,'r',t,Y4,'m')
+%plot(t,Y1,'b')
 %plot(t,Y1,'b',t2,m1,'k',t,Y2,'r',t2,m2,'k')
 axis([0 1.25 0 0.6])
-legend('Y1','Y2','Y3','Y4','Y5')
+%legend('9/21/2021 (11AM) - 27.452 MHz','9/21/2021 (3PM) - 27.428 MHz','9/22/2021 (10AM) - 27.442 MHz','9/22/2021 (4PM) - 27.42 MHz')
 grid 
-title('T2 Relaxation Curves - Raw')
+title('T2 Relaxation Curve - Toluene')
 xlabel('Time (s)')
 ylabel('Voltage (V)')
-%%{
+%{
 nexttile
-plot(meanOut(:,1),meanOut(:,2),'b',meanOut(:,1),meanOut(:,3),'k',meanOut(:,1),meanOut(:,4),'r',meanOut(:,1),meanOut(:,5),'m',meanOut(:,1),meanOut(:,6),'c')
+plot(t,Y5,'r')
+%plot(meanOut(:,1),meanOut(:,2),'b',meanOut(:,1),meanOut(:,3),'k',meanOut(:,1),meanOut(:,4),'r',meanOut(:,1),meanOut(:,5),'m',meanOut(:,1),meanOut(:,6),'c')
 %plot(t2,m1,'b',t2,m2,'k',t2,m3,'r',t2,m4,'m',t2,m5,'c')
 %plot(t2,Yq(:,2),'b',t2,Yq(:,3),'k',t2,Yq(:,4),'r',t2,Yq(:,5),'m',t2,Yq(:,6),'c')
 axis([0 1.25 0 0.6])
-legend('LP1','LP2','LP3','LP4','LP5')
+%legend('LP1','LP2','LP3','LP4','LP5')
 grid 
-title('T2 Relaxation Curves - Filtered')
+title('T2 Relaxation Curve (64 Scans) - Toluene')
 xlabel('Time (s)')
 ylabel('Voltage (V)')
 %}

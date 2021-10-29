@@ -2,9 +2,9 @@
 clc
 clear all
 file1 = '2021-10-28 17-19 Oscilloscope - Waveform Data - JP-5 (32 Scans - 4s)';
-file2 = '2021-10-28 15-01 Oscilloscope - Waveform Data - JP-8 (32 Scans - 4s)';
-file3 = '2021-10-28 14-20 Oscilloscope - Waveform Data - Jet-A (32 Scans - 4s)';
-file4 = '2021-10-28 18-56 Oscilloscope - Waveform Data - Gevo ATJ (32 Scans - 4s)';
+file2 = '2021-10-29 09-59 Oscilloscope - Waveform Data - JP-5 (32 Scans - 4s)';
+file3 = '2021-10-27 16-29 Oscilloscope - Waveform Data - Heptane (16 Scans - 4s)';
+file4 = '2021-10-28 16-39 Oscilloscope - Waveform Data - JP-5 (32 Scans - 4s)';
 
 f1name = file1(48:size(file1,2));
 f2name = file2(48:size(file2,2));
@@ -97,10 +97,10 @@ for i=1:100
 end
 
 %%{
-f1 = fit(t,Ya,'exp2')
-f2 = fit(t,Yb,'exp2')
-f3 = fit(t,Yc,'exp2')
-f4 = fit(t,Yd,'exp2')
+f1 = fit(t(1:2775,1),Ya(1:2775,1),'exp2')
+f2 = fit(t(1:2775,1),Yb(1:2775,1),'exp2')
+f3 = fit(t(1:2775,1),Yc(1:2775,1),'exp2')
+f4 = fit(t(1:2775,1),Yd(1:2775,1),'exp2')
 %}
 
 f1coeff = coeffvalues(f1);
@@ -131,7 +131,7 @@ tiledlayout(1,3)
 
 % Raw Relaxation Data
 nexttile
-plot(t,Y1,'b',t,Y2,'k',t,Y3,'m',t,Y4,'r')
+plot(t,Ya,'b',t,Yb,'k',t,Yc,'m',t,Yd,'r')
 axis([0 4 0 0.7])
 grid
 legend(f1name,f2name,f3name,f4name)
@@ -142,7 +142,7 @@ ylabel('Voltage (V)')
 % T2 Distribution
 nexttile(1:2)
 plot(t2,d1,'b',t2,d2,'k',t2,d3,'m',t2,d4,'r')
-axis([0 1.5 0 50])
+%axis([0 1.5 0 50])
 grid
 %legend(f1name,f2name,f3name,f4name)
 title('T2 Distribution')

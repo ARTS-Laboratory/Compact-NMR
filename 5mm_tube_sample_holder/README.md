@@ -6,7 +6,9 @@
 1. Parts glued together
 
 ## V2.
-1. Parts held together with screws and nuts. 
+1. Parts held together with screws and nuts.
+1. All held together with 3 mm hardware. 
+ 
 
 
 

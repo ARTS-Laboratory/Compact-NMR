@@ -11,7 +11,6 @@ T23 = 1;
 mO = 0.5*exp(-t./T21) + 0.5*exp(-t./T22);
 
 Y = zeros(size-9,1);
-T = zeros(size-9,1);
 
 for i = 1:(size-9)
    Y(i,:) = mO(i,:) + rand()/40;

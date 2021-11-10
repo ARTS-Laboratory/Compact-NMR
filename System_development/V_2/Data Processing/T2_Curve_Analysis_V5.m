@@ -1,10 +1,10 @@
 %% Parameters & Curve Extraction
 clc
 clear all
-file1 = '2021-10-28 17-19 Oscilloscope - Waveform Data - JP-5 (32 Scans - 4s)';
-file2 = '2021-10-29 09-59 Oscilloscope - Waveform Data - JP-5 (32 Scans - 4s)';
-file3 = '2021-10-27 16-29 Oscilloscope - Waveform Data - Heptane (16 Scans - 4s)';
-file4 = '2021-10-28 16-39 Oscilloscope - Waveform Data - JP-5 (32 Scans - 4s)';
+file1 = '2021-10-29 13-36 Oscilloscope - Waveform Data - Shell SPK (32 Scans - 4s)';
+file2 = '2021-10-28 18-32 Oscilloscope - Waveform Data - Shell SPK (32 Scans - 4s)';
+file3 = '2021-10-29 13-22 Oscilloscope - Waveform Data - Shell CPK (32 Scans - 4s)';
+file4 = '2021-10-28 18-45 Oscilloscope - Waveform Data - Shell CPK (32 Scans - 4s)';
 
 f1name = file1(48:size(file1,2));
 f2name = file2(48:size(file2,2));
@@ -97,10 +97,10 @@ for i=1:100
 end
 
 %%{
-f1 = fit(t(1:2775,1),Ya(1:2775,1),'exp2')
-f2 = fit(t(1:2775,1),Yb(1:2775,1),'exp2')
-f3 = fit(t(1:2775,1),Yc(1:2775,1),'exp2')
-f4 = fit(t(1:2775,1),Yd(1:2775,1),'exp2')
+f1 = fit(t,Y1,'exp2')
+f2 = fit(t,Y2,'exp2')
+f3 = fit(t,Y3,'exp2')
+f4 = fit(t,Y4,'exp2')
 %}
 
 f1coeff = coeffvalues(f1);
@@ -116,6 +116,7 @@ t2 = (0:0.0001:1.5)';
 d1 = normpdf(t2,-1/f1coeff(1,2),-1/f1coeff(1,2)+1/f1sd(1,2)) + normpdf(t2,-1/f1coeff(1,4),-1/f1coeff(1,4)+1/f1sd(1,4));
 d2 = normpdf(t2,-1/f2coeff(1,2),-1/f2coeff(1,2)+1/f2sd(1,2)) + normpdf(t2,-1/f2coeff(1,4),-1/f2coeff(1,4)+1/f2sd(1,4));
 d3 = normpdf(t2,-1/f3coeff(1,2),-1/f3coeff(1,2)+1/f3sd(1,2)) + normpdf(t2,-1/f3coeff(1,4),-1/f3coeff(1,4)+1/f3sd(1,4));
+%d3 = normpdf(t2,-1/f3coeff(1,4),-1/f3coeff(1,4)+1/f3sd(1,4));
 d4 = normpdf(t2,-1/f4coeff(1,2),-1/f4coeff(1,2)+1/f4sd(1,2)) + normpdf(t2,-1/f4coeff(1,4),-1/f4coeff(1,4)+1/f4sd(1,4));
 
 %{
@@ -127,11 +128,11 @@ d4 = d4/max(d4);
 
 %% Plots
 
-tiledlayout(1,3)
+%tiledlayout(1,3)
 
 % Raw Relaxation Data
-nexttile
-plot(t,Ya,'b',t,Yb,'k',t,Yc,'m',t,Yd,'r')
+%nexttile
+plot(t,Ya,'b',t,Yb,'k',t,Yc,'r',t,Yd,'m')
 axis([0 4 0 0.7])
 grid
 legend(f1name,f2name,f3name,f4name)
@@ -140,6 +141,7 @@ xlabel('Time (s)')
 ylabel('Voltage (V)')
 
 % T2 Distribution
+%{
 nexttile(1:2)
 plot(t2,d1,'b',t2,d2,'k',t2,d3,'m',t2,d4,'r')
 %axis([0 1.5 0 50])

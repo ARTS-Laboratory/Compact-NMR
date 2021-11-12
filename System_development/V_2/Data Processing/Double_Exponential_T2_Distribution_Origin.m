@@ -1,7 +1,7 @@
 clc
 clear all
 
-t2 = 0:0.0001:1.75;
+t2 = 0:0.0001:2;
 
 name1 = 'Shell CPK - a=0.2';
 sd1 = 0.000376;
@@ -17,45 +17,45 @@ sd21 = 0.00122;
 u21 = 1.21;
 n2 = normpdf(t2,u2,sd2) + normpdf(t2,u21,sd21);
 
-name3 = 'Shell CPK - a=0.6';
-sd3 = 0.000682;
-u3 = 0.8;
-sd31 = 0.000685;
-u31 = 1.13;
+name3 = 'Con Tol & Hep';
+sd3 = 0.04;
+u3 = 1.09;
+sd31 = 0.4;
+u31 = 1.5;
 n3 = normpdf(t2,u3,sd3) + normpdf(t2,u31,sd31);
 
-name4 = 'Shell CPK - a=0.8';
-sd4 = 0.000883;
-u4 = 0.711;
-sd41 = 0.000364;
-u41 = 1.07;
+name4 = 'Mix Tol & Hep';
+sd4 = 0.0071;
+u4 = 1.05;
+sd41 = 0.0062;
+u41 = 1.16;
 n4 = normpdf(t2,u4,sd4) + normpdf(t2,u41,sd41);
 
 name5 = 'Toluene';
-sd5 = 0.00205;
-u5 = 1.08;
-sd51 = 0.00244;
-u51 = 1.64;
+sd5 = 0.005;
+u5 = 1.15;
+sd51 = 0.003;
+u51 = 1.53;
 n5 = normpdf(t2,u5,sd5) + normpdf(t2,u51,sd51);
 
 name6 = 'Heptane'; 
-sd6 = 0.00145;
-u6 = 0.853;
-sd61 = 0.00122;
-u61 = 1.12;
+sd6 = 0.00122;
+u6 = -1;
+sd61 = 0.003;
+u61 = 1.02;
 n6 = normpdf(t2,u6,sd6) + normpdf(t2,u61,sd61);
 
 name7 = 'n-Octane'; 
-sd7 = 0.00174;
-u7 = 0.95;
-sd71 = 0.00145;
-u71 = 1.18;
+sd7 = 0.00145;
+u7 = -1;
+sd71 = 0.003;
+u71 = 1.09;
 n7 = normpdf(t2,u7,sd7) + normpdf(t2,u71,sd71);
 
-plot(t2,n5,'b',t2,n6,'k',t2,n7,'r')
+plot(t2,n4,'b',t2,n5,'k',t2,n6,'r',t2,n7,'m')
 grid
 %axis([0 1.25 0 80])
-legend(name5,name6,name7)
+legend(name4,name5,name6,name7)
 title('Biexponential T2 Value Distribution - Origin Curve Fitting')
 xlabel('T2 Time Constant (s)')
 

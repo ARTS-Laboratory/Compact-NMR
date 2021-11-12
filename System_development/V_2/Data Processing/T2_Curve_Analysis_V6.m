@@ -3,8 +3,8 @@ clc
 clear all
 file1 = '2021-11-01 12-06 Oscilloscope - Waveform Data - Toluene (32 Scans - 5s)';
 file2 = '2021-11-01 13-52 Oscilloscope - Waveform Data - Heptane (32 Scans - 5s)';
-file3 = '2021-11-09 17-29 Oscilloscope - Waveform Data - Mix Tol & Hep (32 Scans - 5s)';
-file4 = '2021-11-08 16-00 Oscilloscope - Waveform Data - Mix Tol & Hep (32 Scans - 5s)';
+file3 = '2021-11-01 14-43 Oscilloscope - Waveform Data - Jet-A (32 Scans - 5s)';
+file4 = '2021-11-01 18-31 Oscilloscope - Waveform Data - JP-5 (32 Scans - 5s)';
 
 f1name = file1(48:size(file1,2));
 f2name = file2(48:size(file2,2));
@@ -83,19 +83,19 @@ Yc = Y3;
 Yd = Y4;
 
 %Filters out noisy components
-for i=1:1
-    Ya(1:size,1) = movmean(Ya(1:size,1),50);
-    Yb(1:size,1) = movmean(Yb(1:size,1),50);
-    Yc(1:size,1) = movmean(Yc(1:size,1),50);
-    Yd(1:size,1) = movmean(Yd(1:size,1),50);
+for i=1:50
+    Ya(1:size,1) = movmean(Ya(1:size,1),25);
+    Yb(1:size,1) = movmean(Yb(1:size,1),25);
+    Yc(1:size,1) = movmean(Yc(1:size,1),25);
+    Yd(1:size,1) = movmean(Yd(1:size,1),25);
 end
 
 Yarr = zeros(size-19,5);
 Yarr(:,1) = t(20:size,1);
-Yarr(:,2) = Ya(20:size,1)/max(Ya(20:size,1));
-Yarr(:,3) = Yb(20:size,1)/max(Yb(20:size,1));
-Yarr(:,4) = Yc(20:size,1)/max(Yc(20:size,1));
-Yarr(:,5) = Yd(20:size,1)/max(Yd(20:size,1));
+Yarr(:,2) = Ya(20:size,1);
+Yarr(:,3) = Yb(20:size,1);
+Yarr(:,4) = Yc(20:size,1);
+Yarr(:,5) = Yd(20:size,1);
 
 %Interpolates data to be 10 times original length/size
 %{
@@ -139,6 +139,13 @@ Ys2e = sum(abs(Yarr(:,2) - Ys2(20:size)));
 Ys3e = sum(abs(Yarr(:,2) - Ys3(20:size)));
 Ys4e = sum(abs(Yarr(:,2) - Ys4(20:size)));
 Ys5e = sum(abs(Yarr(:,2) - Ys5(20:size)));
+
+HC1 = (mean(Y1(1:50))+mean(Y2(1:50)))/2
+HC2 = (mean(Y3(1:50))+mean(Y4(1:50)))/2
+HC11 = mean(Y1(10:20))
+HC22 = mean(Y2(10:20))
+HC33 = mean(Y3(10:20))
+HC44 = mean(Y4(10:20))
 
 %{
 for c = 1:size

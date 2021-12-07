@@ -1,10 +1,10 @@
 %% Parameters & Curve Extraction
 clc
 clear all
-file1 = '2021-11-01 12-06 Oscilloscope - Waveform Data - Toluene (32 Scans - 5s)';
-file2 = '2021-11-01 13-52 Oscilloscope - Waveform Data - Heptane (32 Scans - 5s)';
-file3 = '2021-11-01 14-43 Oscilloscope - Waveform Data - Jet-A (32 Scans - 5s)';
-file4 = '2021-11-01 18-31 Oscilloscope - Waveform Data - JP-5 (32 Scans - 5s)';
+file1 = '2021-12-02 10-53 Oscilloscope - Waveform Data - n-Hexadecane (32 Scans - 5s)';
+file2 = '2021-12-06 13-33 Oscilloscope - Waveform Data - n-Hexadecane (32 Scans - 5s)';
+file3 = '2021-12-02 14-53 Oscilloscope - Waveform Data - n-Butylcyclohexane (32 Scans - 5s)';
+file4 = '2021-12-06 14-23 Oscilloscope - Waveform Data - n-Butylcyclohexane (32 Scans - 5s)';
 
 f1name = file1(48:size(file1,2));
 f2name = file2(48:size(file2,2));
@@ -77,13 +77,19 @@ for c = 1:size
     Y4(c,:) = max4;
 end
 
+Yraw = zeros(size,4);
+Yraw(:,1) = Y1;
+Yraw(:,2) = Y2;
+Yraw(:,3) = Y3;
+Yraw(:,4) = Y4;
+
 Ya = Y1;
 Yb = Y2;
 Yc = Y3;
 Yd = Y4;
 
 %Filters out noisy components
-for i=1:50
+for i=1:5
     Ya(1:size,1) = movmean(Ya(1:size,1),25);
     Yb(1:size,1) = movmean(Yb(1:size,1),25);
     Yc(1:size,1) = movmean(Yc(1:size,1),25);
@@ -96,6 +102,13 @@ Yarr(:,2) = Ya(20:size,1);
 Yarr(:,3) = Yb(20:size,1);
 Yarr(:,4) = Yc(20:size,1);
 Yarr(:,5) = Yd(20:size,1);
+
+Ynorm = zeros(size-19,5);
+Ynorm(:,1) = t(20:size,1);
+Ynorm(:,2) = Ya(20:size,1)/max(Ya(20:size,1));
+Ynorm(:,3) = Yb(20:size,1)/max(Yb(20:size,1));
+Ynorm(:,4) = Yc(20:size,1)/max(Yc(20:size,1));
+Ynorm(:,5) = Yd(20:size,1)/max(Yd(20:size,1));
 
 %Interpolates data to be 10 times original length/size
 %{
@@ -123,60 +136,39 @@ t2 = (0:0.0001:1.5)';
 d1 = normpdf(t2,-1/f1coeff(1,2),-1/f1coeff(1,2)+1/f1sd(1,2)) + normpdf(t2,-1/f1coeff(1,4),-1/f1coeff(1,4)+1/f1sd(1,4));
 d2 = normpdf(t2,-1/f2coeff(1,2),-1/f2coeff(1,2)+1/f2sd(1,2)) + normpdf(t2,-1/f2coeff(1,4),-1/f2coeff(1,4)+1/f2sd(1,4));
 d3 = normpdf(t2,-1/f3coeff(1,2),-1/f3coeff(1,2)+1/f3sd(1,2)) + normpdf(t2,-1/f3coeff(1,4),-1/f3coeff(1,4)+1/f3sd(1,4));
-%d2 = normpdf(t2,-1/f2coeff(1,2),-1/f2coeff(1,2)+1/f2sd(1,2));
 d4 = normpdf(t2,-1/f4coeff(1,2),-1/f4coeff(1,2)+1/f4sd(1,2)) + normpdf(t2,-1/f4coeff(1,4),-1/f4coeff(1,4)+1/f4sd(1,4));
 
 %% Plots
 
-Ys1 = 0.2*exp(-t/1.40464)+0.83125*exp(-t/0.90109);
+%Test Functions
+Ys1 = 0.18*exp(-t/1.6)+0.178*exp(-t/1.18)+0.22*exp(-t/1.15)+0.43*exp(-t/0.88);
 Ys2 = 0.4*exp(-t/1.21479)+0.63096*exp(-t/0.85484);
 Ys3 = 0.6*exp(-t/1.12966)+0.43086*exp(-t/0.80034);
 Ys4 = 0.8*exp(-t/1.06966)+0.23083*exp(-t/0.71097);
 Ys5 = 0.9*exp(-t/1.04049)+0.13089*exp(-t/0.62022);
 
-Ys1e = sum(abs(Yarr(:,2) - Ys1(20:size)));
-Ys2e = sum(abs(Yarr(:,2) - Ys2(20:size)));
-Ys3e = sum(abs(Yarr(:,2) - Ys3(20:size)));
-Ys4e = sum(abs(Yarr(:,2) - Ys4(20:size)));
-Ys5e = sum(abs(Yarr(:,2) - Ys5(20:size)));
-
-HC1 = (mean(Y1(1:50))+mean(Y2(1:50)))/2
-HC2 = (mean(Y3(1:50))+mean(Y4(1:50)))/2
-HC11 = mean(Y1(10:20))
-HC22 = mean(Y2(10:20))
-HC33 = mean(Y3(10:20))
-HC44 = mean(Y4(10:20))
-
 %{
 for c = 1:size
    if mod(c,2) == 0
-       Ys(c,:) = Ys(c,:) + rand()/1000;
+       Ys1(c,:) = Ys1(c,:) + rand()/1000;
+       Ys2(c,:) = Ys2(c,:) + rand()/500;
+       Ys3(c,:) = Ys3(c,:) + rand()/500;
+       Ys4(c,:) = Ys4(c,:) + rand()/500;
+       Ys5(c,:) = Ys5(c,:) + rand()/500;
    else 
-       Ys(c,:) = Ys(c,:) - rand()/1000;
+       Ys1(c,:) = Ys1(c,:) - rand()/1000;
+       Ys2(c,:) = Ys2(c,:) + rand()/500;
+       Ys3(c,:) = Ys3(c,:) + rand()/500;
+       Ys4(c,:) = Ys4(c,:) + rand()/500;
+       Ys5(c,:) = Ys5(c,:) + rand()/500;
    end
 end
 %}
 
-%tiledlayout(1,3)
-
-% Raw Relaxation Data
-%nexttile
+%plot(t,Y1,'b',t,Y2,'k',t,Y3,'r',t,Y4,'m')
 plot(Yarr(:,1),Yarr(:,2),'b',Yarr(:,1),Yarr(:,3),'k',Yarr(:,1),Yarr(:,4),'r',Yarr(:,1),Yarr(:,5),'m')
-axis([0 5 0 1])
+axis([0 5 0 0.75])  
 grid
 legend(f1name,f2name,f3name,f4name)
 title('Normalized T2 Relaxation Curves')
-xlabel('Time (s)')
-ylabel('Voltage (V)')
-
-% T2 Distribution
-%{
-nexttile(1:2)
-plot(t2,d1,'b',t2,d2,'k',t2,d3,'r',t2,d4,'m')
-%axis([0 1.5 0 50])
-grid
-legend(f1name,f2name,f3name,f4name)
-title('T2 Distribution')
-xlabel('T2 Time Constant (s)')
-ylabel('Amplitude')
-%}
+xlabel(

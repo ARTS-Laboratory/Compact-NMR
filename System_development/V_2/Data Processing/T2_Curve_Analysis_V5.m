@@ -1,10 +1,10 @@
 %% Parameters & Curve Extraction
 clc
 clear all
-file1 = '2021-10-29 13-36 Oscilloscope - Waveform Data - Shell SPK (32 Scans - 4s)';
-file2 = '2021-10-28 18-32 Oscilloscope - Waveform Data - Shell SPK (32 Scans - 4s)';
-file3 = '2021-10-29 13-22 Oscilloscope - Waveform Data - Shell CPK (32 Scans - 4s)';
-file4 = '2021-10-28 18-45 Oscilloscope - Waveform Data - Shell CPK (32 Scans - 4s)';
+file1 = '2021-10-27 10-20 Oscilloscope - Waveform Data - JP-5 (16 Scans - 4s)';
+file2 = '2021-10-27 16-00 Oscilloscope - Waveform Data - Jet-A (16 Scans - 4s)';
+file3 = '2021-10-27 16-08 Oscilloscope - Waveform Data - JP-8 (16 Scans - 4s)';
+file4 = '2021-10-29 13-36 Oscilloscope - Waveform Data - Shell SPK (32 Scans - 4s)';
 
 f1name = file1(48:size(file1,2));
 f2name = file2(48:size(file2,2));

@@ -1,0 +1,229 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C1
+U 1 1 619E74D4
+P 4950 3700
+F 0 "C1" V 4698 3700 50  0000 C CNN
+F 1 "C" V 4789 3700 50  0000 C CNN
+F 2 "" H 4988 3550 50  0001 C CNN
+F 3 "~" H 4950 3700 50  0001 C CNN
+	1    4950 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 619E8858
+P 5300 4050
+F 0 "R1" H 5370 4096 50  0000 L CNN
+F 1 "R" H 5370 4005 50  0000 L CNN
+F 2 "" V 5230 4050 50  0001 C CNN
+F 3 "~" H 5300 4050 50  0001 C CNN
+	1    5300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 619E90A5
+P 7350 3800
+F 0 "J3" H 7450 3775 50  0000 L CNN
+F 1 "Conn_Coaxial" H 7450 3684 50  0000 L CNN
+F 2 "" H 7350 3800 50  0001 C CNN
+F 3 " ~" H 7350 3800 50  0001 C CNN
+	1    7350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 619FB887
+P 6950 3325
+F 0 "R2" H 7020 3371 50  0000 L CNN
+F 1 "R" H 7020 3280 50  0000 L CNN
+F 2 "" V 6880 3325 50  0001 C CNN
+F 3 "~" H 6950 3325 50  0001 C CNN
+	1    6950 3325
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 619FC0FF
+P 6950 4050
+F 0 "C2" V 6698 4050 50  0000 C CNN
+F 1 "C" V 6789 4050 50  0000 C CNN
+F 2 "" H 6988 3900 50  0001 C CNN
+F 3 "~" H 6950 4050 50  0001 C CNN
+	1    6950 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6950 3800 6950 3900
+Wire Wire Line
+	6950 3800 7150 3800
+$Comp
+L power:GND #PWR02
+U 1 1 619FD6FA
+P 6125 4250
+F 0 "#PWR02" H 6125 4000 50  0001 C CNN
+F 1 "GND" H 6130 4077 50  0000 C CNN
+F 2 "" H 6125 4250 50  0001 C CNN
+F 3 "" H 6125 4250 50  0001 C CNN
+	1    6125 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4000 7350 4200
+Wire Wire Line
+	7350 4200 6950 4200
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 619FE0BF
+P 4450 3700
+F 0 "J1" H 4550 3675 50  0000 L CNN
+F 1 "Conn_Coaxial" H 4550 3584 50  0000 L CNN
+F 2 "" H 4450 3700 50  0001 C CNN
+F 3 " ~" H 4450 3700 50  0001 C CNN
+	1    4450 3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3700 4800 3700
+Wire Wire Line
+	4450 3900 4450 4200
+Wire Wire Line
+	4450 4200 5300 4200
+Connection ~ 5300 4200
+Wire Wire Line
+	5300 4200 6125 4200
+$Comp
+L MAX4462~Amplifier:MAX4460 U1
+U 1 1 61AA7A21
+P 5800 3500
+F 0 "U1" H 5725 3900 50  0000 C CNN
+F 1 "MAX4460" H 5787 3824 50  0000 C CNN
+F 2 "" H 5800 3500 50  0001 C CNN
+F 3 "" H 5800 3500 50  0001 C CNN
+	1    5800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 61AADF6B
+P 5775 2925
+F 0 "R3" V 5675 2950 50  0000 L CNN
+F 1 "R" V 5675 2875 50  0000 L CNN
+F 2 "" V 5705 2925 50  0001 C CNN
+F 3 "~" H 5775 2925 50  0001 C CNN
+	1    5775 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 61AAE49C
+P 6300 2925
+F 0 "R4" H 6370 2971 50  0000 L CNN
+F 1 "R" H 6370 2880 50  0000 L CNN
+F 2 "" V 6230 2925 50  0001 C CNN
+F 3 "~" H 6300 2925 50  0001 C CNN
+	1    6300 2925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 2925 5625 2925
+Wire Wire Line
+	5925 2925 6050 2925
+Wire Wire Line
+	6050 2925 6050 3150
+Wire Wire Line
+	6050 3150 6125 3150
+Wire Wire Line
+	6125 3150 6125 3325
+Connection ~ 6050 2925
+Wire Wire Line
+	6050 2925 6150 2925
+Wire Wire Line
+	5450 3325 5450 2925
+$Comp
+L power:GND #PWR03
+U 1 1 61AAFB3F
+P 6575 2925
+F 0 "#PWR03" H 6575 2675 50  0001 C CNN
+F 1 "GND" H 6580 2752 50  0000 C CNN
+F 2 "" H 6575 2925 50  0001 C CNN
+F 3 "" H 6575 2925 50  0001 C CNN
+	1    6575 2925
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6450 2925 6575 2925
+Wire Wire Line
+	6125 3675 6125 4200
+Wire Wire Line
+	6125 4250 6125 4200
+Connection ~ 6125 4200
+Wire Wire Line
+	6950 4200 6375 4200
+Connection ~ 6950 4200
+Wire Wire Line
+	5450 2925 5450 2675
+Connection ~ 5450 2925
+Wire Wire Line
+	5450 3675 5300 3675
+Wire Wire Line
+	5300 3675 5300 3700
+Wire Wire Line
+	5100 3700 5300 3700
+Connection ~ 5300 3700
+Wire Wire Line
+	5300 3700 5300 3900
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 61AB1EBB
+P 6375 3500
+F 0 "J2" H 6475 3475 50  0000 L CNN
+F 1 "Conn_Coaxial" H 6475 3384 50  0000 L CNN
+F 2 "" H 6375 3500 50  0001 C CNN
+F 3 " ~" H 6375 3500 50  0001 C CNN
+	1    6375 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6125 3500 6175 3500
+Wire Wire Line
+	6375 3700 6375 4200
+Connection ~ 6375 4200
+Wire Wire Line
+	6375 4200 6125 4200
+$Comp
+L power:GND #PWR01
+U 1 1 61AB3A7F
+P 5325 3500
+F 0 "#PWR01" H 5325 3250 50  0001 C CNN
+F 1 "GND" H 5330 3327 50  0000 C CNN
+F 2 "" H 5325 3500 50  0001 C CNN
+F 3 "" H 5325 3500 50  0001 C CNN
+	1    5325 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 3500 5325 3500
+Wire Wire Line
+	6950 2675 6950 3175
+Wire Wire Line
+	5450 2675 6950 2675
+Wire Wire Line
+	6950 3475 6950 3800
+Connection ~ 6950 3800
+$EndSCHEMATC

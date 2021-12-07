@@ -171,4 +171,6 @@ axis([0 5 0 0.75])
 grid
 legend(f1name,f2name,f3name,f4name)
 title('Normalized T2 Relaxation Curves')
-xlabel(
+xlabel('Time (s)')
+ylabel('Voltage (V)')
+

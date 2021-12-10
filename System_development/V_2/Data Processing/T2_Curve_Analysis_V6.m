@@ -1,9 +1,9 @@
 %% Parameters & Curve Extraction
 clc
 clear all
-file1 = '2021-12-02 10-53 Oscilloscope - Waveform Data - n-Hexadecane (32 Scans - 5s)';
-file2 = '2021-12-06 13-33 Oscilloscope - Waveform Data - n-Hexadecane (32 Scans - 5s)';
-file3 = '2021-12-02 14-53 Oscilloscope - Waveform Data - n-Butylcyclohexane (32 Scans - 5s)';
+file1 = '2021-11-02 10-23 Oscilloscope - Waveform Data - Shell CPK (32 Scans - 5s)';
+file2 = '2021-11-01 16-24 Oscilloscope - Waveform Data - Shell CPK (32 Scans - 5s)';
+file3 = '2021-11-01 14-43 Oscilloscope - Waveform Data - Jet-A (32 Scans - 5s)';
 file4 = '2021-12-06 14-23 Oscilloscope - Waveform Data - n-Butylcyclohexane (32 Scans - 5s)';
 
 f1name = file1(48:size(file1,2));
@@ -166,8 +166,9 @@ end
 %}
 
 %plot(t,Y1,'b',t,Y2,'k',t,Y3,'r',t,Y4,'m')
-plot(Yarr(:,1),Yarr(:,2),'b',Yarr(:,1),Yarr(:,3),'k',Yarr(:,1),Yarr(:,4),'r',Yarr(:,1),Yarr(:,5),'m')
-axis([0 5 0 0.75])  
+%plot(Yarr(:,1),Yarr(:,2),'b',Yarr(:,1),Yarr(:,3),'k',Yarr(:,1),Yarr(:,4),'r',Yarr(:,1),Yarr(:,5),'m')
+plot(Yarr(:,1),Ynorm(:,2),'b',Yarr(:,1),Ynorm(:,3),'k',Yarr(:,1),Ynorm(:,4),'r',Yarr(:,1),Ynorm(:,5),'m')
+axis([0 5 0 1])  
 grid
 legend(f1name,f2name,f3name,f4name)
 title('Normalized T2 Relaxation Curves')

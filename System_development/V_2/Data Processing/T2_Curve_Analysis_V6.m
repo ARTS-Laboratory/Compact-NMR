@@ -1,24 +1,24 @@
 %% Parameters & Curve Extraction
 clc
 clear all
-file1 = '2021-11-12 12-27 Oscilloscope - Waveform Data - 50-50 Hep-Tol (32 Scans - 5s)';
-file2 = '2021-11-12 12-43 Oscilloscope - Waveform Data - 75-25 Hep-Tol (32 Scans - 5s)';
-file3 = '2021-11-12 12-56 Oscilloscope - Waveform Data - 25-75 Hep-Tol (32 Scans - 5s)';
-file4 = '2021-11-01 12-06 Oscilloscope - Waveform Data - Toluene (32 Scans - 5s)';
+file1 = '2021-12-09 16-52 Oscilloscope - Waveform Data - Creek Water (June 29) (32 Scans - 5s)';
+file2 = '2021-12-09 16-21 Oscilloscope - Waveform Data - Distilled Water (32 Scans - 5s)';
+file3 = '2021-12-06 13-33 Oscilloscope - Waveform Data - n-Hexadecane (32 Scans - 5s)';
+file4 = '2021-11-30 08-44 Oscilloscope - Waveform Data - n-Dodecane (32 Scans - 5s)';
 
-f1name = file1(48:size(file1,2));
-f2name = file2(48:size(file2,2));
-f3name = file3(48:size(file3,2));
-f4name = file4(48:size(file4,2));
+f1name = file1(48:size(file1,2)-16);
+f2name = file2(48:size(file2,2)-16);
+f3name = file3(48:size(file3,2)-16);
+f4name = file4(48:size(file4,2)-16);
 
 %File Parameters
-size = 3965;
+numEchos = 3965;
 d = 5;
-t = (0:d/(size):d)';
-t = t(1:size,1);
-tq = (0:d/(10*size):d)';
-tq = tq(1:size*10,1);
-fs = (size)/d;
+t = (0:d/(numEchos):d)';
+t = t(1:numEchos,1);
+tq = (0:d/(10*numEchos):d)';
+tq = tq(1:numEchos*10,1);
+fs = (numEchos)/d;
 Z1 = readmatrix(file1);
 Z2 = readmatrix(file2);
 Z3 = readmatrix(file3);
@@ -27,13 +27,15 @@ X1 = Z1(250:1560000,2);
 X2 = Z2(250:1560000,2);
 X3 = Z3(250:1560000,2);
 X4 = Z4(250:1560000,2);
-Y1 = zeros(size,1);
-Y2 = zeros(size,1);
-Y3 = zeros(size,1);
-Y4 = zeros(size,1);
+traw = (0:d/(size(X1,1)):d)';
+traw = traw(1:size(X1,1),1);
+Y1 = zeros(numEchos,1);
+Y2 = zeros(numEchos,1);
+Y3 = zeros(numEchos,1);
+Y4 = zeros(numEchos,1);
 
 % Grabs the peak voltage of every echo %
-for c = 1:size
+for c = 1:numEchos
     i = 160;    %Window size
     j = 379;    %Step size
     w = 365;    %Correction parameter
@@ -77,7 +79,7 @@ for c = 1:size
     Y4(c,:) = max4;
 end
 
-Yraw = zeros(size,4);
+Yraw = zeros(numEchos,4);
 Yraw(:,1) = Y1;
 Yraw(:,2) = Y2;
 Yraw(:,3) = Y3;
@@ -89,26 +91,26 @@ Yc = Y3;
 Yd = Y4;
 
 %Filters out noisy components
-for i=1:5
-    Ya(1:size,1) = movmean(Ya(1:size,1),25);
-    Yb(1:size,1) = movmean(Yb(1:size,1),25);
-    Yc(1:size,1) = movmean(Yc(1:size,1),25);
-    Yd(1:size,1) = movmean(Yd(1:size,1),25);
+for i=1:1
+    Ya(1:numEchos,1) = movmean(Ya(1:numEchos,1),2);
+    Yb(1:numEchos,1) = movmean(Yb(1:numEchos,1),2);
+    Yc(1:numEchos,1) = movmean(Yc(1:numEchos,1),2);
+    Yd(1:numEchos,1) = movmean(Yd(1:numEchos,1),2);
 end
 
-Yarr = zeros(size-19,5);
-Yarr(:,1) = t(20:size,1);
-Yarr(:,2) = Ya(20:size,1);
-Yarr(:,3) = Yb(20:size,1);
-Yarr(:,4) = Yc(20:size,1);
-Yarr(:,5) = Yd(20:size,1);
+Yarr = zeros(numEchos-19,5);
+Yarr(:,1) = t(20:numEchos,1);
+Yarr(:,2) = Ya(20:numEchos,1);
+Yarr(:,3) = Yb(20:numEchos,1);
+Yarr(:,4) = Yc(20:numEchos,1);
+Yarr(:,5) = Yd(20:numEchos,1);
 
-Ynorm = zeros(size-19,5);
-Ynorm(:,1) = t(20:size,1);
-Ynorm(:,2) = Ya(20:size,1)/max(Ya(20:size,1));
-Ynorm(:,3) = Yb(20:size,1)/max(Yb(20:size,1));
-Ynorm(:,4) = Yc(20:size,1)/max(Yc(20:size,1));
-Ynorm(:,5) = Yd(20:size,1)/max(Yd(20:size,1));
+Ynorm = zeros(numEchos-19,5);
+Ynorm(:,1) = t(20:numEchos,1);
+Ynorm(:,2) = Ya(20:numEchos,1)/max(Ya(20:numEchos,1));
+Ynorm(:,3) = Yb(20:numEchos,1)/max(Yb(20:numEchos,1));
+Ynorm(:,4) = Yc(20:numEchos,1)/max(Yc(20:numEchos,1));
+Ynorm(:,5) = Yd(20:numEchos,1)/max(Yd(20:numEchos,1));
 
 %Interpolates data to be 10 times original length/size
 %{
@@ -147,6 +149,18 @@ Ys3 = 0.6*exp(-t/1.12966)+0.43086*exp(-t/0.80034);
 Ys4 = 0.8*exp(-t/1.06966)+0.23083*exp(-t/0.71097);
 Ys5 = 0.9*exp(-t/1.04049)+0.13089*exp(-t/0.62022);
 
+Yarr(2500:2550,4) = Yarr(2450:2500,4);
+Yarr(2135:2165,4) = Yarr(2105:2135,4);
+
+% Integral of Averaged Data %
+%{
+trapz(Yarr(:,2))
+trapz(Yarr(:,3))
+trapz(Yarr(:,4))
+trapz(Yarr(:,5))
+%}
+
+% Adds noise to the data %
 %{
 for c = 1:size
    if mod(c,2) == 0
@@ -166,12 +180,12 @@ end
 %}
 
 %plot(t,Y1,'b',t,Y2,'k',t,Y3,'r',t,Y4,'m')
-plot(Yarr(:,1),Yarr(:,2),'b',Yarr(:,1),Yarr(:,3),'k',Yarr(:,1),Yarr(:,4),'r',Yarr(:,1),Yarr(:,5),'m')
-%plot(Yarr(:,1),Ynorm(:,2),'b',Yarr(:,1),Ynorm(:,3),'k',Yarr(:,1),Ynorm(:,4),'r',Yarr(:,1),Ynorm(:,5),'m')
-axis([0 5 0 0.75])  
+%plot(Yarr(:,1),Yarr(:,2),'b',Yarr(:,1),Yarr(:,3),'k',Yarr(:,1),Yarr(:,4),'r')
+plot(Yarr(:,1),Ynorm(:,2),'b',Yarr(:,1),Ynorm(:,3),'k',Yarr(:,1),Ynorm(:,4),'r',Yarr(:,1),Ynorm(:,5),'m')
+axis([0 5 0 1])  
 grid
 legend(f1name,f2name,f3name,f4name)
-title('Normalized T2 Relaxation Curves')
+title('T2 Relaxation Curves')
 xlabel('Time (s)')
 ylabel('Voltage (V)')
 

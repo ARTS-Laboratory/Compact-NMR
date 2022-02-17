@@ -1,10 +1,10 @@
 %% Parameters & Curve Extraction
 clc
 clear all
-file1 = '2021-12-09 16-52 Oscilloscope - Waveform Data - Creek Water (June 29) (32 Scans - 5s)';
-file2 = '2021-12-09 16-21 Oscilloscope - Waveform Data - Distilled Water (32 Scans - 5s)';
-file3 = '2021-12-06 13-33 Oscilloscope - Waveform Data - n-Hexadecane (32 Scans - 5s)';
-file4 = '2021-11-30 08-44 Oscilloscope - Waveform Data - n-Dodecane (32 Scans - 5s)';
+file1 = '2021-11-12 12-27 Oscilloscope - Waveform Data - 50-50 Hep-Tol (32 Scans - 5s)';
+file2 = '2022-2-16 17-12 Oscilloscope - Waveform Data - Fire Ash Water (A131) (32 Scans - 5s)';
+file3 = '2022-2-16 15-44 Oscilloscope - Waveform Data - Distilled Water (32 Scans - 5s)';
+file4 = '2021-12-09 16-52 Oscilloscope - Waveform Data - Creek Water (June 29) (32 Scans - 5s)';
 
 f1name = file1(48:size(file1,2)-16);
 f2name = file2(48:size(file2,2)-16);
@@ -91,7 +91,7 @@ Yc = Y3;
 Yd = Y4;
 
 %Filters out noisy components
-for i=1:1
+for i=1:2
     Ya(1:numEchos,1) = movmean(Ya(1:numEchos,1),2);
     Yb(1:numEchos,1) = movmean(Yb(1:numEchos,1),2);
     Yc(1:numEchos,1) = movmean(Yc(1:numEchos,1),2);
@@ -180,9 +180,9 @@ end
 %}
 
 %plot(t,Y1,'b',t,Y2,'k',t,Y3,'r',t,Y4,'m')
-%plot(Yarr(:,1),Yarr(:,2),'b',Yarr(:,1),Yarr(:,3),'k',Yarr(:,1),Yarr(:,4),'r')
-plot(Yarr(:,1),Ynorm(:,2),'b',Yarr(:,1),Ynorm(:,3),'k',Yarr(:,1),Ynorm(:,4),'r',Yarr(:,1),Ynorm(:,5),'m')
-axis([0 5 0 1])  
+plot(Yarr(:,1),Yarr(:,2),'b',Yarr(:,1),Yarr(:,3),'k',Yarr(:,1),Yarr(:,4),'r',Yarr(:,1),Yarr(:,5),'c')
+%plot(Yarr(:,1),Ynorm(:,2),'b',Yarr(:,1),Ynorm(:,3),'k',Yarr(:,1),Ynorm(:,4),'r',Yarr(:,1),Ynorm(:,5),'c')
+axis([0 5 0 0.7])  
 grid
 legend(f1name,f2name,f3name,f4name)
 title('T2 Relaxation Curves')

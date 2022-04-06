@@ -169,32 +169,6 @@ Wire Wire Line
 Wire Wire Line
 	4200 4250 3000 4250
 $Comp
-L Connector:Conn_Coaxial J5
-U 1 1 60DEB4B7
-P 4100 1650
-F 0 "J5" H 4200 1625 50  0000 L CNN
-F 1 "Conn_Coaxial" H 4200 1534 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132203-12_Horizontal" H 4100 1650 50  0001 C CNN
-F 3 " ~" H 4100 1650 50  0001 C CNN
-	1    4100 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 60DEBC89
-P 4100 1950
-F 0 "#PWR05" H 4100 1700 50  0001 C CNN
-F 1 "GND" H 4105 1777 50  0000 C CNN
-F 2 "" H 4100 1950 50  0001 C CNN
-F 3 "" H 4100 1950 50  0001 C CNN
-	1    4100 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 1650 3900 1650
-Wire Wire Line
-	4100 1850 4100 1950
-$Comp
 L pspice:C C5
 U 1 1 60E4CBF7
 P 5300 3350
@@ -576,4 +550,123 @@ F 3 "" H 6150 1200 50  0001 C CNN
 	1    6100 1200
 	1    0    0    -1  
 $EndComp
+$Comp
+L pspice:C C8
+U 1 1 61A038FA
+P 4975 1075
+F 0 "C8" H 5153 1121 50  0000 L CNN
+F 1 "C" H 5153 1030 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4975 1075 50  0001 C CNN
+F 3 "~" H 4975 1075 50  0001 C CNN
+	1    4975 1075
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:C C9
+U 1 1 61A04290
+P 7425 1475
+F 0 "C9" H 7603 1521 50  0000 L CNN
+F 1 "C" H 7603 1430 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7425 1475 50  0001 C CNN
+F 3 "~" H 7425 1475 50  0001 C CNN
+	1    7425 1475
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 61A049E0
+P 5525 1350
+F 0 "R3" H 5595 1396 50  0000 L CNN
+F 1 "R" H 5595 1305 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5455 1350 50  0001 C CNN
+F 3 "~" H 5525 1350 50  0001 C CNN
+	1    5525 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 61A04F2A
+P 6900 1200
+F 0 "R4" H 6970 1246 50  0000 L CNN
+F 1 "R" H 6970 1155 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6830 1200 50  0001 C CNN
+F 3 "~" H 6900 1200 50  0001 C CNN
+	1    6900 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 1075 5525 1075
+Wire Wire Line
+	5850 1075 5850 1100
+Wire Wire Line
+	5525 1200 5525 1075
+Connection ~ 5525 1075
+Wire Wire Line
+	5525 1075 5850 1075
+Wire Wire Line
+	6450 1200 6750 1200
+Wire Wire Line
+	7050 1200 7425 1200
+Wire Wire Line
+	7425 1200 7425 1225
+Wire Wire Line
+	4725 1650 4725 1075
+Wire Wire Line
+	3750 1650 4725 1650
+$Comp
+L power:GND #PWR04
+U 1 1 61A0E4A4
+P 6250 1625
+F 0 "#PWR04" H 6250 1375 50  0001 C CNN
+F 1 "GND" H 6255 1452 50  0000 C CNN
+F 2 "" H 6250 1625 50  0001 C CNN
+F 3 "" H 6250 1625 50  0001 C CNN
+	1    6250 1625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5525 1500 5525 1625
+Wire Wire Line
+	5525 1625 5850 1625
+Wire Wire Line
+	5850 1300 5850 1625
+Connection ~ 5850 1625
+Wire Wire Line
+	5850 1625 6100 1625
+Wire Wire Line
+	6100 1425 6100 1625
+Connection ~ 6100 1625
+Wire Wire Line
+	6100 1625 6200 1625
+Wire Wire Line
+	6200 1375 6200 1625
+Connection ~ 6200 1625
+Wire Wire Line
+	6200 1625 6250 1625
+Wire Wire Line
+	6250 1625 7350 1625
+Wire Wire Line
+	7350 1625 7350 1725
+Wire Wire Line
+	7350 1725 7425 1725
+Connection ~ 6250 1625
+$Comp
+L Connector:Conn_Coaxial J5
+U 1 1 61A195B4
+P 7900 1200
+F 0 "J5" H 8000 1175 50  0000 L CNN
+F 1 "Conn_Coaxial" H 8000 1084 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132291-12_Vertical" H 7900 1200 50  0001 C CNN
+F 3 " ~" H 7900 1200 50  0001 C CNN
+	1    7900 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7425 1200 7700 1200
+Connection ~ 7425 1200
+Wire Wire Line
+	7425 1725 7900 1725
+Wire Wire Line
+	7900 1725 7900 1400
+Connection ~ 7425 1725
 $EndSCHEMATC

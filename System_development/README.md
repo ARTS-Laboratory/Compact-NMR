@@ -6,6 +6,7 @@
 
 ## Version 2
 * A full-scale development that combines amplifiers, filters, and switches onto custom PCB boards.
+* Temperature regulation was added for increased system stability and testing accuracy.
 
 
 

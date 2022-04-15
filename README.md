@@ -7,6 +7,19 @@ A compact nuclear magnetic resonance (NMR) device for:
 * Magnetic nanoparticle detection in wildfire ash
 
 
+## [NMR development](NMR_development)
+
+## [Literature](literature)
+
+## [Images](images)
+
+## [Project Management](project_management)
+
+
+
+
+
+
 ![Image of NMR](images/NMR_setup_V2.1.png)
 ![Image of NMR](images/NMR_schematic_V2.1.png)
 ![Image of NMR](images/NMR_Probe_V2.png)

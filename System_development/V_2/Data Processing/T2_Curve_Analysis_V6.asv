@@ -1,15 +1,15 @@
 %% Parameters & Curve Extraction
 clc
 clear all
-file1 = '2022-3-23 15-32 Oscilloscope - Waveform Data - NCWZ-GS-24 (16 Scans - 5s)';
-file2 = '2022-4-01 16-28 Oscilloscope - Waveform Data - NCWZ-GS-24 (16 Scans - 5s)';
-file3 = '2022-4-01 16-36 Oscilloscope - Waveform Data - SI-AS2-8 (16 Scans - 5s)';
-file4 = '2022-4-01 11-18 Oscilloscope - Waveform Data - NCWZ-GS-42-SI (16 Scans - 5s)';
+file1 = '2022-2-28 14-40 Oscilloscope - Waveform Data - White Ash (A-011) (16 Scans - 5s)';
+file2 = '2022-2-22 11-08 Oscilloscope - Waveform Data - Black Ash (A-013) (16 Scans - 5s)';
+file3 = '2022-4-13 13-27 Oscilloscope - Waveform Data - LNU - A024 (8 Scans - 5s)';
+file4 = '2022-4-13 13-24 Oscilloscope - Waveform Data - LNU - A025 (8 Scans - 5s)';
 
-f1name = file1(48:size(file1,2)-16);
-f2name = file2(48:size(file2,2)-16);
-f3name = file3(48:size(file3,2)-16);
-f4name = file4(48:size(file4,2)-16);
+f1name = file1(48:size(file1,2)-15);
+f2name = file2(48:size(file2,2)-15);
+f3name = file3(48:size(file3,2)-15);
+f4name = file4(48:size(file4,2)-15);
 
 %File Parameters
 numEchos = 3965;
@@ -38,12 +38,12 @@ Y4 = zeros(numEchos,1);
 k = 1;
 for c = 1:numEchos
     for n = k:k+100       
-        if X1(n,:) > 1.17
+        if X1(n,:) > 1.17   % looks for the begining of each RF pulse
             max1 = X1(n+75,:);
             max2 = X2(n+75,:);
             max3 = X3(n+75,:);
             max4 = X4(n+75,:);
-            for g = (n+75):(n+275)
+            for g = (n+75):(n+275) % Scans window after each RF pulse for the echo peak
                 if X1(g+1,:) > max1
                     max1 = X1(g+1,:);                 
                 end
@@ -94,17 +94,21 @@ Yarr(:,3) = Yb(20:numEchos,1);
 Yarr(:,4) = Yc(20:numEchos,1);
 Yarr(:,5) = Yd(20:numEchos,1);
 
-for q=2:5
-    Yarr(:,q) = Yarr(:,q)-min(Yarr(:,q));
-    %Ynorm(:,q) = Ynorm(:,q)-min(Ynorm(:,q));
-end
-
 % Normalizes the decay curves to start at 1
 Ynorm = zeros(numEchos-19,5);
 Ynorm(:,1) = Yarr(:,1);
 
+Ynorm1 = zeros(numEchos,4);
+
 for j = 2:5
     Ynorm(:,j) = Yarr(:,j)/max(Yarr(:,j));
+    Ynorm1(:,j-1) = Yraw(:,j-1)/max(Yraw(:,j-1));
+end
+
+for q=2:5
+    Yarr(:,q) = Yarr(:,q)-min(Yarr(:,q));
+    %Ynorm(:,q) = Ynorm(:,q)-min(Ynorm(:,q));
+    Ynorm1(:,q-1) = Ynorm1(:,q-1)-min(Ynorm(:,q-1));
 end
 
 %Interpolates data to be 10 times original length/size
@@ -177,9 +181,11 @@ for c = 1:size
 end
 %}
 
-plot(Yarr(:,1),Yarr(:,2),'b',Yarr(:,1),Yarr(:,3),'k',Yarr(:,1),Yarr(:,4),'r',Yarr(:,1),Yarr(:,5),'m')
+%plot(Yarr(:,1),Yarr(:,2),'b',Yarr(:,1),Yarr(:,3),'k',Yarr(:,1),Yarr(:,4),'r',Yarr(:,1),Yarr(:,5),'m')
+%plot(t,Yraw(:,1),'b',t,Yraw(:,2),'k',t,Yraw(:,3),'r',t,Yraw(:,4),'m')
 %plot(Yarr(:,1),Ynorm(:,2),'b',Yarr(:,1),Ynorm(:,3),'k',Yarr(:,1),Ynorm(:,4),'r',Yarr(:,1),Ynorm(:,5),'m')
-axis([0 4 0 0.3])  
+plot(t,Ynorm1(:,1),'b',t,Ynorm1(:,2),'k',t,Ynorm1(:,3),'r',t,Ynorm1(:,4),'m')
+axis([0 5 0 1])  
 grid
 legend(f1name,f2name,f3name,f4name)
 title('T2 Relaxation Curves')

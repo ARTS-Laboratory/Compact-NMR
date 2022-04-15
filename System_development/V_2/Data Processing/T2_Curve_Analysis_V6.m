@@ -1,15 +1,15 @@
 %% Parameters & Curve Extraction
 clc
 clear all
-file1 = '2022-3-23 17-42 Oscilloscope - Waveform Data - B-AS2-9 (16 Scans - 5s)';
-file2 = '2022-4-01 16-03 Oscilloscope - Waveform Data - B-AS2-9 - MNPs Removed (16 Scans - 5s)';
-file3 = '2022-4-01 16-03 Oscilloscope - Waveform Data - B-AS2-9 - MNPs Removed (16 Scans - 5s)';
-file4 = '2022-4-01 16-03 Oscilloscope - Waveform Data - B-AS2-9 - MNPs Removed (16 Scans - 5s)';
+file1 = '2022-2-28 14-40 Oscilloscope - Waveform Data - White Ash (A-011) (16 Scans - 5s)';
+file2 = '2022-2-22 11-08 Oscilloscope - Waveform Data - Black Ash (A-013) (16 Scans - 5s)';
+file3 = '2022-4-14 16-41 Oscilloscope - Waveform Data - LNU - A051 (8 Scans - 5s)';
+file4 = '2022-4-13 13-24 Oscilloscope - Waveform Data - LNU - A025 (8 Scans - 5s)';
 
-f1name = file1(48:size(file1,2)-16);
-f2name = file2(48:size(file2,2)-16);
-f3name = file3(48:size(file3,2)-16);
-f4name = file4(48:size(file4,2)-16);
+f1name = file1(48:size(file1,2)-15);
+f2name = file2(48:size(file2,2)-15);
+f3name = file3(48:size(file3,2)-15);
+f4name = file4(48:size(file4,2)-15);
 
 %File Parameters
 numEchos = 3965;
@@ -94,17 +94,21 @@ Yarr(:,3) = Yb(20:numEchos,1);
 Yarr(:,4) = Yc(20:numEchos,1);
 Yarr(:,5) = Yd(20:numEchos,1);
 
-for q=2:5
-    Yarr(:,q) = Yarr(:,q)-min(Yarr(:,q));
-    %Ynorm(:,q) = Ynorm(:,q)-min(Ynorm(:,q));
-end
-
 % Normalizes the decay curves to start at 1
 Ynorm = zeros(numEchos-19,5);
 Ynorm(:,1) = Yarr(:,1);
 
+Ynorm1 = zeros(numEchos,4);
+
 for j = 2:5
     Ynorm(:,j) = Yarr(:,j)/max(Yarr(:,j));
+    Ynorm1(:,j-1) = Yraw(:,j-1)/max(Yraw(:,j-1));
+end
+
+for q=2:5
+    Yarr(:,q) = Yarr(:,q)-min(Yarr(:,q));
+    %Ynorm(:,q) = Ynorm(:,q)-min(Ynorm(:,q));
+    Ynorm1(:,q-1) = Ynorm1(:,q-1)-min(Ynorm(:,q-1));
 end
 
 %Interpolates data to be 10 times original length/size
@@ -178,10 +182,12 @@ end
 %}
 
 %plot(Yarr(:,1),Yarr(:,2),'b',Yarr(:,1),Yarr(:,3),'k',Yarr(:,1),Yarr(:,4),'r',Yarr(:,1),Yarr(:,5),'m')
-plot(Yarr(:,1),Ynorm(:,2),'b',Yarr(:,1),Ynorm(:,3),'k')
-axis([0 4 0 1])  
+%plot(t,Yraw(:,1),'b',t,Yraw(:,2),'k',t,Yraw(:,3),'r',t,Yraw(:,4),'m')
+%plot(Yarr(:,1),Ynorm(:,2),'b',Yarr(:,1),Ynorm(:,3),'k',Yarr(:,1),Ynorm(:,4),'r',Yarr(:,1),Ynorm(:,5),'m')
+%plot(t,Ynorm1(:,1),'b',t,Ynorm1(:,2),'k',t,Ynorm1(:,3),'r',t,Ynorm1(:,4),'m')
+axis([0 5 0 1])  
 grid
-legend(f1name,f2name)
+legend(f1name,f2name,f3name,f4name)
 title('T2 Relaxation Curves')
 xlabel('Time (s)')
 ylabel('Voltage (V)')

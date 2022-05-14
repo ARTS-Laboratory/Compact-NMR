@@ -1,0 +1,302 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_Coaxial Vin1
+U 1 1 618BDE49
+P 2850 3650
+F 0 "Vin1" H 2778 3888 50  0000 C CNN
+F 1 "Conn_Coaxial" H 2778 3797 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132203-12_Horizontal" H 2850 3650 50  0001 C CNN
+F 3 " ~" H 2850 3650 50  0001 C CNN
+	1    2850 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L RF_Amplifier:GALI-S66 U1
+U 1 1 618BF69B
+P 4050 3650
+F 0 "U1" H 4050 4017 50  0000 C CNN
+F 1 "GALI-S66" H 4050 3926 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 4100 4050 50  0001 C CNN
+F 3 "https://www.minicircuits.com/pdfs/GALI-S66+.pdf" H 4050 3650 50  0001 C CNN
+	1    4050 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 618C21DA
+P 3400 3650
+F 0 "C1" V 3148 3650 50  0000 C CNN
+F 1 "C" V 3239 3650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder" H 3438 3500 50  0001 C CNN
+F 3 "~" H 3400 3650 50  0001 C CNN
+	1    3400 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 618C2854
+P 4700 3650
+F 0 "C2" V 4448 3650 50  0000 C CNN
+F 1 "C" V 4539 3650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder" H 4738 3500 50  0001 C CNN
+F 3 "~" H 4700 3650 50  0001 C CNN
+	1    4700 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 618C2E4F
+P 5100 3150
+F 0 "C3" H 4985 3104 50  0000 R CNN
+F 1 "C" H 4985 3195 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder" H 5138 3000 50  0001 C CNN
+F 3 "~" H 5100 3150 50  0001 C CNN
+	1    5100 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 618C3B4C
+P 4450 3250
+F 0 "L1" V 4404 3328 50  0000 L CNN
+F 1 "INDUCTOR" V 4495 3328 50  0000 L CNN
+F 2 "Inductor_THT:L_Axial_L5.3mm_D2.2mm_P7.62mm_Horizontal_Vishay_IM-1" H 4450 3250 50  0001 C CNN
+F 3 "~" H 4450 3250 50  0001 C CNN
+	1    4450 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 618C4921
+P 4800 3000
+F 0 "R1" V 4593 3000 50  0000 C CNN
+F 1 "R" V 4684 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1210_3225Metric_Pad1.30x2.65mm_HandSolder" V 4730 3000 50  0001 C CNN
+F 3 "~" H 4800 3000 50  0001 C CNN
+	1    4800 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 618C546C
+P 3950 4250
+F 0 "#PWR02" H 3950 4000 50  0001 C CNN
+F 1 "GND" H 3955 4077 50  0000 C CNN
+F 2 "" H 3950 4250 50  0001 C CNN
+F 3 "" H 3950 4250 50  0001 C CNN
+	1    3950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 618C592B
+P 5100 3400
+F 0 "#PWR03" H 5100 3150 50  0001 C CNN
+F 1 "GND" H 5105 3227 50  0000 C CNN
+F 2 "" H 5100 3400 50  0001 C CNN
+F 3 "" H 5100 3400 50  0001 C CNN
+	1    5100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial Vout1
+U 1 1 618C5CFA
+P 7200 3650
+F 0 "Vout1" H 7300 3625 50  0000 L CNN
+F 1 "Conn_Coaxial" H 7300 3534 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132203-12_Horizontal" H 7200 3650 50  0001 C CNN
+F 3 " ~" H 7200 3650 50  0001 C CNN
+	1    7200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_Amplifier:GALI-S66 U2
+U 1 1 618D4DA3
+P 5700 3650
+F 0 "U2" H 5700 4017 50  0000 C CNN
+F 1 "GALI-S66" H 5700 3926 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 5750 4050 50  0001 C CNN
+F 3 "https://www.minicircuits.com/pdfs/GALI-S66+.pdf" H 5700 3650 50  0001 C CNN
+	1    5700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 618D4DB7
+P 6350 3650
+F 0 "C4" V 6098 3650 50  0000 C CNN
+F 1 "C" V 6189 3650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder" H 6388 3500 50  0001 C CNN
+F 3 "~" H 6350 3650 50  0001 C CNN
+	1    6350 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 618D4DC1
+P 6750 3150
+F 0 "C5" H 6635 3104 50  0000 R CNN
+F 1 "C" H 6635 3195 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder" H 6788 3000 50  0001 C CNN
+F 3 "~" H 6750 3150 50  0001 C CNN
+	1    6750 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:INDUCTOR L2
+U 1 1 618D4DCB
+P 6100 3250
+F 0 "L2" V 6054 3328 50  0000 L CNN
+F 1 "INDUCTOR" V 6145 3328 50  0000 L CNN
+F 2 "Inductor_THT:L_Axial_L5.3mm_D2.2mm_P7.62mm_Horizontal_Vishay_IM-1" H 6100 3250 50  0001 C CNN
+F 3 "~" H 6100 3250 50  0001 C CNN
+	1    6100 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 618D4DD5
+P 6450 3000
+F 0 "R2" V 6243 3000 50  0000 C CNN
+F 1 "R" V 6334 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1210_3225Metric_Pad1.30x2.65mm_HandSolder" V 6380 3000 50  0001 C CNN
+F 3 "~" H 6450 3000 50  0001 C CNN
+	1    6450 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 618D4DDF
+P 5600 4250
+F 0 "#PWR04" H 5600 4000 50  0001 C CNN
+F 1 "GND" H 5605 4077 50  0000 C CNN
+F 2 "" H 5600 4250 50  0001 C CNN
+F 3 "" H 5600 4250 50  0001 C CNN
+	1    5600 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 618D4DE9
+P 6750 3400
+F 0 "#PWR05" H 6750 3150 50  0001 C CNN
+F 1 "GND" H 6755 3227 50  0000 C CNN
+F 2 "" H 6750 3400 50  0001 C CNN
+F 3 "" H 6750 3400 50  0001 C CNN
+	1    6750 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3950 5600 4250
+Wire Wire Line
+	3950 3950 3950 4250
+$Comp
+L power:GND #PWR01
+U 1 1 618DF00D
+P 2850 4250
+F 0 "#PWR01" H 2850 4000 50  0001 C CNN
+F 1 "GND" H 2855 4077 50  0000 C CNN
+F 2 "" H 2850 4250 50  0001 C CNN
+F 3 "" H 2850 4250 50  0001 C CNN
+	1    2850 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3850 2850 4250
+Wire Wire Line
+	5100 3400 5100 3300
+Wire Wire Line
+	5100 3000 4950 3000
+Wire Wire Line
+	4650 3000 4450 3000
+Wire Wire Line
+	4450 3500 4450 3650
+Wire Wire Line
+	4450 3650 4350 3650
+Wire Wire Line
+	4550 3650 4450 3650
+Connection ~ 4450 3650
+Wire Wire Line
+	4850 3650 5400 3650
+Wire Wire Line
+	3750 3650 3550 3650
+Wire Wire Line
+	3250 3650 3050 3650
+Wire Wire Line
+	6000 3650 6100 3650
+Wire Wire Line
+	6100 3500 6100 3650
+Connection ~ 6100 3650
+Wire Wire Line
+	6100 3650 6200 3650
+Wire Wire Line
+	6100 3000 6300 3000
+Wire Wire Line
+	6600 3000 6750 3000
+Wire Wire Line
+	6750 3300 6750 3400
+Wire Wire Line
+	6500 3650 7000 3650
+$Comp
+L power:GND #PWR07
+U 1 1 618E1F24
+P 7200 4250
+F 0 "#PWR07" H 7200 4000 50  0001 C CNN
+F 1 "GND" H 7205 4077 50  0000 C CNN
+F 2 "" H 7200 4250 50  0001 C CNN
+F 3 "" H 7200 4250 50  0001 C CNN
+	1    7200 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3850 7200 4250
+$Comp
+L Connector:Conn_Coaxial Vcc1
+U 1 1 618E597F
+P 7200 2650
+F 0 "Vcc1" H 7300 2625 50  0000 L CNN
+F 1 "Conn_Coaxial" H 7300 2534 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132203-12_Horizontal" H 7200 2650 50  0001 C CNN
+F 3 " ~" H 7200 2650 50  0001 C CNN
+	1    7200 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 618E78D3
+P 7200 3000
+F 0 "#PWR06" H 7200 2750 50  0001 C CNN
+F 1 "GND" H 7205 2827 50  0000 C CNN
+F 2 "" H 7200 3000 50  0001 C CNN
+F 3 "" H 7200 3000 50  0001 C CNN
+	1    7200 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2850 7200 3000
+Wire Wire Line
+	7000 2650 6750 2650
+Wire Wire Line
+	6750 2650 6750 3000
+Connection ~ 6750 3000
+Wire Wire Line
+	6750 2650 5100 2650
+Wire Wire Line
+	5100 2650 5100 3000
+Connection ~ 6750 2650
+Connection ~ 5100 3000
+$EndSCHEMATC

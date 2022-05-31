@@ -1,0 +1,226 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:L78L12_TO92 U1
+U 1 1 6189B32B
+P 4850 3550
+F 0 "U1" H 4850 3792 50  0000 C CNN
+F 1 "L78L12_TO92" H 4850 3701 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4850 3775 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 4850 3500 50  0001 C CNN
+	1    4850 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 618A0C28
+P 4400 3850
+F 0 "C1" H 4515 3896 50  0000 L CNN
+F 1 "C" H 4515 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4438 3700 50  0001 C CNN
+F 3 "~" H 4400 3850 50  0001 C CNN
+	1    4400 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 618A26AF
+P 5350 3850
+F 0 "C2" H 5465 3896 50  0000 L CNN
+F 1 "C" H 5465 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5388 3700 50  0001 C CNN
+F 3 "~" H 5350 3850 50  0001 C CNN
+	1    5350 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3700 4400 3550
+Wire Wire Line
+	4400 3550 4550 3550
+Wire Wire Line
+	5150 3550 5350 3550
+Wire Wire Line
+	5350 3550 5350 3700
+Wire Wire Line
+	8050 3550 7550 3550
+Connection ~ 5350 3550
+Wire Wire Line
+	4400 4000 4400 4150
+Wire Wire Line
+	4400 4150 4850 4150
+Wire Wire Line
+	5350 4150 5350 4000
+Wire Wire Line
+	4850 3850 4850 4150
+Connection ~ 4850 4150
+Wire Wire Line
+	4850 4150 5350 4150
+$Comp
+L power:GND #PWR01
+U 1 1 618A467D
+P 4850 4150
+F 0 "#PWR01" H 4850 3900 50  0001 C CNN
+F 1 "GND" H 4855 3977 50  0000 C CNN
+F 2 "" H 4850 4150 50  0001 C CNN
+F 3 "" H 4850 4150 50  0001 C CNN
+	1    4850 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3550 4200 3550
+Connection ~ 4400 3550
+Connection ~ 7550 3550
+Wire Wire Line
+	7550 4150 6700 4150
+Wire Wire Line
+	5750 4150 5750 4000
+Wire Wire Line
+	5750 3550 6300 3550
+Wire Wire Line
+	7550 4150 7550 4000
+Wire Wire Line
+	6700 3950 6700 4150
+Connection ~ 6700 4150
+Wire Wire Line
+	6700 4150 5750 4150
+$Comp
+L Device:C C3
+U 1 1 618A6CD9
+P 7550 3850
+F 0 "C3" H 7665 3896 50  0000 L CNN
+F 1 "C" H 7665 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7588 3700 50  0001 C CNN
+F 3 "~" H 7550 3850 50  0001 C CNN
+	1    7550 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7550 3700 7550 3550
+$Comp
+L Device:C C4
+U 1 1 618A75B5
+P 5750 3850
+F 0 "C4" H 5865 3896 50  0000 L CNN
+F 1 "C" H 5865 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5788 3700 50  0001 C CNN
+F 3 "~" H 5750 3850 50  0001 C CNN
+	1    5750 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5750 3700 5750 3550
+$Comp
+L power:GND #PWR02
+U 1 1 618A7DDD
+P 6700 4150
+F 0 "#PWR02" H 6700 3900 50  0001 C CNN
+F 1 "GND" V 6705 3977 50  0000 C CNN
+F 2 "" H 6700 4150 50  0001 C CNN
+F 3 "" H 6700 4150 50  0001 C CNN
+	1    6700 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3550 5750 3550
+Connection ~ 5750 3550
+Wire Wire Line
+	5750 3550 5750 3250
+$Comp
+L power:GND #PWR0101
+U 1 1 618DDA34
+P 8250 3750
+F 0 "#PWR0101" H 8250 3500 50  0001 C CNN
+F 1 "GND" V 8255 3622 50  0000 R CNN
+F 2 "" H 8250 3750 50  0001 C CNN
+F 3 "" H 8250 3750 50  0001 C CNN
+	1    8250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 618DE757
+P 4000 3350
+F 0 "#PWR0103" H 4000 3100 50  0001 C CNN
+F 1 "GND" H 4005 3177 50  0000 C CNN
+F 2 "" H 4000 3350 50  0001 C CNN
+F 3 "" H 4000 3350 50  0001 C CNN
+	1    4000 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 618EC8D2
+P 4000 3550
+F 0 "J1" H 4100 3432 50  0000 L CNN
+F 1 "Conn_Coaxial" H 4100 3523 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132203-12_Horizontal" H 4000 3550 50  0001 C CNN
+F 3 " ~" H 4000 3550 50  0001 C CNN
+	1    4000 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 618EEA07
+P 5750 3050
+F 0 "J2" V 5632 3150 50  0000 L CNN
+F 1 "Conn_Coaxial" V 5723 3150 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132203-12_Horizontal" H 5750 3050 50  0001 C CNN
+F 3 " ~" H 5750 3050 50  0001 C CNN
+	1    5750 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J3
+U 1 1 618EF5EC
+P 8250 3550
+F 0 "J3" H 8350 3525 50  0000 L CNN
+F 1 "Conn_Coaxial" H 8350 3434 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132203-12_Horizontal" H 8250 3550 50  0001 C CNN
+F 3 " ~" H 8250 3550 50  0001 C CNN
+	1    8250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:ADP7142AUJZ-1.8 U2
+U 1 1 61A84701
+P 6700 3650
+F 0 "U2" H 6700 3925 50  0000 C CNN
+F 1 "ADP7142AUJZ-1.8" H 6700 4016 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 6700 3250 50  0001 C CIN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7142.pdf" H 6700 3150 50  0001 C CNN
+	1    6700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3550 7550 3550
+Wire Wire Line
+	6300 3550 6300 3750
+Connection ~ 6300 3550
+Wire Wire Line
+	7100 3650 7100 3550
+Connection ~ 7100 3550
+$Comp
+L power:GND #PWR?
+U 1 1 61DF6A1D
+P 5950 3050
+F 0 "#PWR?" H 5950 2800 50  0001 C CNN
+F 1 "GND" V 5955 2922 50  0000 R CNN
+F 2 "" H 5950 3050 50  0001 C CNN
+F 3 "" H 5950 3050 50  0001 C CNN
+	1    5950 3050
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

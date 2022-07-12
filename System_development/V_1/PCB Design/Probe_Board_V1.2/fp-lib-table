@@ -1,5 +1,0 @@
-(fp_lib_table
-  (lib (name C_Trim_5501)(type KiCad)(uri ${KIPRJMOD}/C_Trim_5501.pretty)(options "")(descr ""))
-  (lib (name C_Trim_AP55HV)(type KiCad)(uri ${KIPRJMOD}/C_Trim_AP55HV.pretty)(options "")(descr ""))
-  (lib (name L_Coil)(type KiCad)(uri ${KIPRJMOD}/L_Coil.pretty)(options "")(descr ""))
-)

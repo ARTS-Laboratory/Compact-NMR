@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.0
+          "min_clearance": 0.508
         }
       },
       "diff_pair_dimensions": [
@@ -120,8 +120,7 @@
       },
       "track_widths": [
         0.0,
-        0.25,
-        1.044
+        1.06587
       ],
       "via_dimensions": [
         {
@@ -348,7 +347,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "HP_Amplifier_Test_Board.kicad_pro",
+    "filename": "NMR_control_board_V4.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -427,7 +426,7 @@
   },
   "sheets": [
     [
-      "d5187344-0652-4c7e-a950-d0f3d210196f",
+      "fd52c1ac-e295-4f41-943d-ac9b91f9f1bf",
       ""
     ]
   ],

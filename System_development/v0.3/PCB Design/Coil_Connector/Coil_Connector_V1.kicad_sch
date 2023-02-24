@@ -186,6 +186,21 @@
     (uuid d2de4093-1fc2-4bc1-94b6-4d0fe3426c6f)
   )
 
+  (symbol (lib_id "Connector:Conn_Coaxial") (at 127 88.9 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 00000000-0000-0000-0000-000062015609)
+    (property "Reference" "J1" (id 0) (at 128.8288 82.8548 0))
+    (property "Value" "Conn_Coaxial" (id 1) (at 128.8288 85.1662 0))
+    (property "Footprint" "Connector_Coaxial:SMA_Amphenol_132203-12_Horizontal" (id 2) (at 127 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" " ~" (id 3) (at 127 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 50a0c711-5472-4007-b4fb-db345e54dd77))
+    (pin "2" (uuid 21680358-1375-4a67-aff6-704bd9c97df0))
+  )
+
   (symbol (lib_id "Device:L") (at 146.05 92.71 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006201708a)
@@ -221,21 +236,6 @@
     (pin "1" (uuid 7e476d92-1c92-417e-bcab-000b53c56b91))
   )
 
-  (symbol (lib_id "Connector:Conn_Coaxial") (at 127 88.9 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid dd9e1481-f6b4-4387-9ea1-e9f8b6be9a1a)
-    (property "Reference" "5V1" (id 0) (at 123.19 87.63 0))
-    (property "Value" "Conn_Coaxial" (id 1) (at 127 85.09 0))
-    (property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" (id 2) (at 127 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" " ~" (id 3) (at 127 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d5c467a8-e0d7-4284-911f-5dc3c2155956))
-    (pin "2" (uuid 295717f2-1ac8-4435-adb1-0b01f15b77d8))
-  )
-
   (sheet_instances
     (path "/" (page "1"))
   )
@@ -244,8 +244,8 @@
     (path "/00000000-0000-0000-0000-00006201827c"
       (reference "#PWR01") (unit 1) (value "GND") (footprint "")
     )
-    (path "/dd9e1481-f6b4-4387-9ea1-e9f8b6be9a1a"
-      (reference "5V1") (unit 1) (value "Conn_Coaxial") (footprint "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount")
+    (path "/00000000-0000-0000-0000-000062015609"
+      (reference "J1") (unit 1) (value "Conn_Coaxial") (footprint "Connector_Coaxial:SMA_Amphenol_132203-12_Horizontal")
     )
     (path "/00000000-0000-0000-0000-00006201708a"
       (reference "L1") (unit 1) (value "L") (footprint "L_Coil:L_Coil")

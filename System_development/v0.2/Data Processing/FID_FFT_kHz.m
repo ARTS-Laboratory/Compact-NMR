@@ -1,15 +1,11 @@
 clc
 clear all
 
-filename1 = 'iso-Octane Echo.csv';
-filename2 = 'Toluene 3.csv';
-filename3 = 'Toluene Echo.csv';
-filename4 = 'n-Octane Echo.csv';
-filename5 = 'Heptane FID.csv';
-X = readmatrix(filename2);
-T = 2e-7;
-Fs = 1/T;
-L = 6502;
+filename1 = 'DW Echo.csv';
+X = readmatrix(filename1);
+Fs = 300e3;
+T = 1/Fs;
+L = 251;
 t = (0:L-1)*T;                                      
 Fn = Fs/2;                                          
 FX = fft(X)/L;                                     
@@ -30,7 +26,7 @@ ylabel('Voltage (V)')
 nexttile
 plot(Fv, abs(FX(Iv))*2)
 grid
-xlim([3 30])
+axis([0 150 -0.01 0.05])
 %ylim([0 0.1])
 title('Fourier Transform Of Original Signal')
 xlabel('Frequency (kHz)')

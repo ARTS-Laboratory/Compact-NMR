@@ -5,14 +5,14 @@ clear all
 fs = 1e6;
 
 %90 Degree pulse time (us)
-time90 = 7;
+time90 = 20;
 
 %tau time 
 tau = 0.64e-3;
 tau2 = 1.25e-3;
 
 %Number of 180 pulses
-np = 1977;
+np = 3;
 
 %90 degree pulse low & high times
 h90 = fs*time90*1E-6;
@@ -25,7 +25,7 @@ lT180 = tau2*fs;
 
 %Delay at the beginning & end of generation
 delayB = 250;
-delayE = 150002;
+delayE = 150001;
 
 %Total AWG length
 length = delayB + hT90 + lT90 + np*(hT180 + lT180) + delayE;

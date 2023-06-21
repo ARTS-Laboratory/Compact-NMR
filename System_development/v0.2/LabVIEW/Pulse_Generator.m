@@ -5,22 +5,22 @@ clear all
 np = 2;
 
 %90 degree pulse low & high times
-hT90 = 75;
-lT90 = 16000/2;
+hT90 = 20;
+lT90 = 640;
 
 %180 degree pulse low & high times
-hT180 = 150;
-lT180 = 31250/2;
+hT180 = 40;
+lT180 = 1250;
 
 %Delay at the beginning & end of generation
 delayB = 250;
-delayE = 1250000;
+delayE = 150001;
 
 %Total AWG length
 length = delayB + hT90 + lT90 + np*(hT180 + lT180) + delayE;
 
 %Total Time of Test
-fs = 12.5e6;
+fs = 1e6;
 time = (length - delayE)/fs;
 
 %%

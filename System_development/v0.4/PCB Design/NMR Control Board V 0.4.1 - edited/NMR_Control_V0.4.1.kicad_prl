@@ -14,7 +14,6 @@
       "vias": 1.0,
       "zones": 0.6
     },
-    "ratsnest_display_mode": 0,
     "selection_filter": {
       "dimensions": true,
       "footprints": true,
@@ -65,11 +64,11 @@
       39,
       40
     ],
-    "visible_layers": "ffdfdef_ffffffff",
+    "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "NMR_Control_V0.4.1 - edited.kicad_prl",
+    "filename": "NMR_Control_V0.4.1.kicad_prl",
     "version": 3
   },
   "project": {

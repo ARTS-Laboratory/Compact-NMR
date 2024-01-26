@@ -5,14 +5,14 @@ clear all
 fs = 1e6;
 
 %90 Degree pulse time (us)
-time90 = 7;
+time90 = 10;
 
 %tau time 
 tau = 0.64e-3;
 tau2 = 1.25e-3;
 
 %Number of 180 pulses
-np = 4;
+np = 3;
 
 %90 degree pulse low & high times
 h90 = fs*time90*1E-6;

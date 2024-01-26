@@ -4649,6 +4649,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ":KICAD7_3DMODEL_DIR:142-0701-801.step"
+      (offset (xyz 0 -2 0))
+      (scale (xyz 0.7 0.7 0.7))
+      (rotate (xyz 180 -90 -90))
+    )
   )
 
   (footprint "Capacitor_SMD:C_1206_3216Metric" (layer "F.Cu")
@@ -4918,6 +4923,11 @@
       (net 1 "GND") (pinfunction "GND") (pintype "passive") (tstamp 6ff03219-afaf-4adf-bf3c-0ebc47031bd1))
     (pad "5" smd rect (at 1.2192 -0.9525) (size 1.27 0.5588) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 25 "Net-(-5V_REG1-C1+)") (pinfunction "C1+") (pintype "passive") (tstamp 099007f4-058d-4fd6-95dc-24e81198af8e))
+    (model ":KICAD7_3DMODEL_DIR:LM828M5 (3)/STEP/DBV0005A.stp"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" (layer "F.Cu")
@@ -5033,6 +5043,11 @@
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model ":KICAD7_3DMODEL_DIR:142-0701-801.step"
+      (offset (xyz 0 -2 0))
+      (scale (xyz 0.7 0.7 0.7))
+      (rotate (xyz 180 -90 -90))
     )
   )
 
@@ -5573,6 +5588,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KICAD6_3DMODEL_DIR}/733910071.stp"
+      (offset (xyz 0 -155.5 -217.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 -90 0))
+    )
   )
 
   (footprint "Capacitor_SMD:C_1206_3216Metric" (layer "F.Cu")
@@ -5752,6 +5772,11 @@
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model ":KICAD7_3DMODEL_DIR:733910071.stp"
+      (offset (xyz 0 -155.5 -217.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 -90 0))
     )
   )
 
@@ -6093,6 +6118,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KICAD6_3DMODEL_DIR}/733910071.stp"
+      (offset (xyz 0 -155.5 -217.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 -90 0))
+    )
   )
 
   (footprint "Connector_Coaxial:SMA_Amphenol_132291_Vertical" (layer "F.Cu")
@@ -6158,6 +6188,11 @@
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model "${KICAD6_3DMODEL_DIR}/733910071.stp"
+      (offset (xyz 0 -155.5 -217.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 -90 0))
     )
   )
 
@@ -6243,6 +6278,11 @@
     (pad "6" smd rect (at 2.54 -2.54 90) (size 1.651 2.54) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 1 "GND") (pinfunction "GND") (pintype "passive") (zone_connect 2) (tstamp 345bbc46-c7cd-485f-83fb-03ba92c897f1))
     (model "${KICAD6_3DMODEL_DIR}/RF_Mini-Circuits.3dshapes/Mini-Circuits_CD636.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ":KICAD7_3DMODEL_DIR:ul_ADP-2-1W-/CD636_MNC.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -6525,6 +6565,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ":KICAD7_3DMODEL_DIR:142-0701-801.step"
+      (offset (xyz 0 -2 0))
+      (scale (xyz 0.7 0.7 0.7))
+      (rotate (xyz 180 -90 -90))
+    )
   )
 
   (footprint "Connector_Coaxial:SMA_Amphenol_132291_Vertical" (layer "F.Cu")
@@ -6590,6 +6635,16 @@
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model "${KICAD6_3DMODEL_DIR}/733910071.stp" hide
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${KICAD6_3DMODEL_DIR}/733910071.stp"
+      (offset (xyz 0 -155.5 -217.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 -90 0))
     )
   )
 
@@ -6727,6 +6782,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ":KICAD7_3DMODEL_DIR:ul_ADP-2-1W-/CD636_MNC.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" (layer "F.Cu")
@@ -6842,6 +6902,11 @@
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model ":KICAD7_3DMODEL_DIR:142-0701-801.step"
+      (offset (xyz 0 -2 0))
+      (scale (xyz 0.7 0.7 0.7))
+      (rotate (xyz 180 -90 -90))
     )
   )
 
@@ -7224,6 +7289,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ":KICAD7_3DMODEL_DIR:142-0701-801.step"
+      (offset (xyz 0 -2 0))
+      (scale (xyz 0.7 0.7 0.7))
+      (rotate (xyz 180 -90 -90))
+    )
   )
 
   (footprint "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" (layer "F.Cu")
@@ -7365,9 +7435,14 @@
     (pad "2" thru_hole circle (at 2.54 2.54 90) (size 2.25 2.25) (drill 1.7) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Ext") (pintype "passive") (tstamp ad2f6978-c847-4090-b017-e336c48ffdbf))
     (model "${KICAD6_3DMODEL_DIR}/Connector_Coaxial.3dshapes/SMA_Amphenol_132291_Vertical.wrl"
-      (offset (xyz 0 0 0))
+      (offset (xyz 12 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model "${KICAD6_3DMODEL_DIR}/733910071.stp"
+      (offset (xyz 0 -155.5 -217.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 -90 0))
     )
   )
 
@@ -7649,6 +7724,11 @@
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model ":KICAD7_3DMODEL_DIR:142-0701-801.step"
+      (offset (xyz 0 -2 0))
+      (scale (xyz 0.7 0.7 0.7))
+      (rotate (xyz 180 -90 -90))
     )
   )
 

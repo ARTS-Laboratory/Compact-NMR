@@ -12,6 +12,8 @@
 * A smaller and portable device with reduced power consumption and physical footprint intended for in situ environmental monitoring.
 * A new compact magnet was designed and temperature regulation has been removed in favor of a frequency calibration method.
 
+## Version 0.4
+* A bigger board that includes duplexer, voltage regulator, and amplifier on one control board.
 
 
 

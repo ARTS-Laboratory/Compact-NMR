@@ -3,10 +3,12 @@
     "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
+    "hidden_netclasses": [],
     "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
+      "images": 0.6,
       "pads": 1.0,
       "tracks": 1.0,
       "vias": 1.0,
@@ -62,13 +64,15 @@
       33,
       34,
       35,
-      36
+      36,
+      39,
+      40
     ],
     "visible_layers": "003ffff_00000000",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "Probe_Board_V1.2.kicad_prl",
+    "filename": "NMR probe impedance matching - v0.1.1.kicad_prl",
     "version": 3
   },
   "project": {

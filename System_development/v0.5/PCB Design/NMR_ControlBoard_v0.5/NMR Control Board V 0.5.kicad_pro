@@ -35,8 +35,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 4.2,
-          "width": 1.35
+          "height": 0.4,
+          "width": 1.625
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -56,12 +56,11 @@
         }
       ],
       "drc_exclusions": [
-        "isolated_copper|65264584|83876798|d936730b-677a-4c73-8f13-0e006f7e8131|00000000-0000-0000-0000-000000000000",
-        "isolated_copper|65387716|86893434|d936730b-677a-4c73-8f13-0e006f7e8131|00000000-0000-0000-0000-000000000000",
-        "isolated_copper|65390258|91213967|93f85402-ea72-48e0-9c53-d3bd888f1f65|00000000-0000-0000-0000-000000000000",
-        "isolated_copper|67683334|86820548|d936730b-677a-4c73-8f13-0e006f7e8131|00000000-0000-0000-0000-000000000000",
+        "isolated_copper|65352246|81386633|d936730b-677a-4c73-8f13-0e006f7e8131|00000000-0000-0000-0000-000000000000",
+        "isolated_copper|65390258|88463967|93f85402-ea72-48e0-9c53-d3bd888f1f65|00000000-0000-0000-0000-000000000000",
+        "isolated_copper|67683334|84258048|d936730b-677a-4c73-8f13-0e006f7e8131|00000000-0000-0000-0000-000000000000",
         "lib_footprint_issues|77604940|80904386|6fb0f04d-bcf1-4088-9275-54a4fc5260bb|00000000-0000-0000-0000-000000000000",
-        "starved_thermal|72302500|89775000|d936730b-677a-4c73-8f13-0e006f7e8131|6aa27703-0990-4f31-9792-dee5ef434f94|F.Cu",
+        "starved_thermal|72302500|87025000|d936730b-677a-4c73-8f13-0e006f7e8131|6aa27703-0990-4f31-9792-dee5ef434f94|F.Cu",
         "starved_thermal|79925000|76050000|93f85402-ea72-48e0-9c53-d3bd888f1f65|b4b737cc-7e5f-4a45-a4cf-a7f180209222|B.Cu"
       ],
       "meta": {
@@ -424,7 +423,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "NMR Control Board V 0.4.2.kicad_pro",
+    "filename": "NMR Control Board V 0.5.kicad_pro",
     "version": 1
   },
   "net_settings": {

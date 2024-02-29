@@ -1614,6 +1614,10 @@
     (stroke (width 0) (type default))
     (uuid 3f0dbb09-9c94-48ef-94f9-568cb1baafe5)
   )
+  (wire (pts (xy 49.784 181.864) (xy 49.784 183.134))
+    (stroke (width 0) (type default))
+    (uuid 4113d90d-51fc-4087-b3c2-e8c4debe2cb7)
+  )
   (wire (pts (xy 48.006 88.646) (xy 48.006 91.186))
     (stroke (width 0) (type default))
     (uuid 42b288d5-c82d-4b96-814e-56432e2be050)
@@ -2730,6 +2734,31 @@
       (project "NMR Control Board V 0.5"
         (path "/1de478d9-4249-4d6f-b43f-fd31039cff25"
           (reference "#PWR04") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 49.784 183.134 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 39954f3e-e9d1-44ae-a6b8-f7fad8477aca)
+    (property "Reference" "#PWR08" (at 49.784 189.484 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 49.784 187.96 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 49.784 183.134 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 49.784 183.134 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 699dad6e-04bf-4aeb-86af-8364b4e05d7e))
+    (instances
+      (project "NMR Control Board V 0.5"
+        (path "/1de478d9-4249-4d6f-b43f-fd31039cff25"
+          (reference "#PWR08") (unit 1)
         )
       )
     )

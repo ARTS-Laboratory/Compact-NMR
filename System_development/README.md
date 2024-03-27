@@ -8,7 +8,7 @@
 <img src="../media/NMR_system_v0.1.png" alt="drawing" width="700"/>
 </p>
 <p align="center">
-Figure 1: Full setup for the first version of the TD-NMR system, with key components and subsystems annotated. 
+The compact NMR system.
 </p>
 
 ## Version 0.2 - Bloch
@@ -19,7 +19,7 @@ Figure 1: Full setup for the first version of the TD-NMR system, with key compon
 <img src="../media/NMR_system_v0.2.jpg" alt="drawing" width="700"/>
 </p>
 <p align="center">
-Figure 1: Full setup for the second version of the TD-NMR system, with key components and subsystems annotated. 
+The compact NMR system.
 </p>
 
 ## Version 0.3 - Purcell
@@ -30,7 +30,7 @@ Figure 1: Full setup for the second version of the TD-NMR system, with key compo
 <img src="../media/NMR_system_v0.3.png" alt="drawing" width="700"/>
 </p>
 <p align="center">
-Figure 2: Full setup for the third version of the TD-NMR system, with key components and subsystems annotated. 
+The compact NMR system.
 </p>
 
 ## Version 0.4 - Van Hove
@@ -40,7 +40,7 @@ Figure 2: Full setup for the third version of the TD-NMR system, with key compon
 <img src="../media/NMR_system_v0.4.jpg" alt="drawing" width="700"/>
 </p>
 <p align="center">
-Figure 3: Full setup for the fourth version of the TD-NMR system, with key components and subsystems annotated. 
+The compact NMR system.
 </p>
 
 ## Version 0.5 Dirac

@@ -47,7 +47,7 @@ Figure 3: Full setup for the fourth version of the TD-NMR system, with key compo
 * A small and compact design intended for use in a sensor package design that can be easily deployed and retrieved.
 
 <p align="center">
-<img src="../media/NMR_PCB_v0.5.png" alt="drawing" width="600"/>
+<img src="media/NMR_PCB_v0.5.png" alt="drawing" width="600"/>
 </p>
 <p align="center">
 The compact NMR system.

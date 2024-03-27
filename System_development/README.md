@@ -20,7 +20,7 @@ Figure 1: Full setup for the first version of the TD-NMR system, with key compon
 * A new compact magnet was designed and temperature regulation has been removed in favor of a frequency calibration method.
 
 <p align="center">
-<img src="media/NMR_system(0.3).jpg" alt="drawing" width="700"/>
+<img src="media/NMR_system(0.3).png" alt="drawing" width="700"/>
 </p>
 <p align="center">
 Figure 2: Full setup for the third version of the TD-NMR system, with key components and subsystems annotated. 

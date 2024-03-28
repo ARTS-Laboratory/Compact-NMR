@@ -13,6 +13,7 @@ The compact NMR system.
 
 ## Version 0.2 - Bloch
 * A full-scale development that combines amplifiers, filters, and switches onto custom PCB boards.
+* Introduced a compact magnet design
   
 
 <p align="center">
@@ -23,7 +24,7 @@ The compact NMR system.
 </p>
 
 ## Version 0.3 - Purcell
-* A compact magnet design with temperature regulation removed in favor of a frequency calibration method.
+* A design with temperature regulation removed in favor of a frequency calibration method.
 
 <p align="center">
 <img src="../media/NMR_system_v0.3.jpg" alt="drawing" width="400"/>

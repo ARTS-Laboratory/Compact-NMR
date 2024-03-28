@@ -26,7 +26,7 @@ The compact NMR system.
 * A compact magnet design with temperature regulation removed in favor of a frequency calibration method.
 
 <p align="center">
-<img src="../media/NMR_system_v0.3.png" alt="drawing" width="400"/>
+<img src="../media/NMR_system_v0.3.jpg" alt="drawing" width="400"/>
 </p>
 <p align="center">
 The compact NMR system.

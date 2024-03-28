@@ -13,7 +13,7 @@ The compact NMR system.
 
 ## Version 0.2 - Bloch
 * A full-scale development that combines amplifiers, filters, and switches onto custom PCB boards.
-* Introduced a compact magnet design
+
   
 
 <p align="center">

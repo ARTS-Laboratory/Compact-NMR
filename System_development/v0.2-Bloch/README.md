@@ -8,7 +8,7 @@ Main aspects of this version are:
 * Another goal is to get signal generation and data acquisition compacted to on or more PCBs. 
  
 <p align="center">
-<img src="../media/NMR_system_v0.2.jpg" alt="drawing" width="600"/>
+<img src="../../media/NMR_system_v0.2.jpg" alt="drawing" width="600"/>
 </p>
 <p align="center">
 The compact NMR system.

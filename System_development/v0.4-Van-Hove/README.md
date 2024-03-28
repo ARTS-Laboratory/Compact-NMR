@@ -5,7 +5,7 @@ Main aspects of this version are:
 * A single large PCB measuring approximately 90 x 140 mm.
  
 <p align="center">
-<img src="../media/NMR_system_v0.4.jpg" alt="drawing" width="600"/>
+<img src="../../media/NMR_system_v0.4.jpg" alt="drawing" width="600"/>
 </p>
 <p align="center">
 The compact NMR system.

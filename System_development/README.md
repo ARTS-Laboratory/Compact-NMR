@@ -1,4 +1,4 @@
-# Compact-NMR (cNMR) - Systems Development 
+# Compact-NMR (cNMR) - System Development 
 
 ## Version 0.1 Rabi
 * A full-scale development system that uses full-size amplifiers, filters, and switches. 

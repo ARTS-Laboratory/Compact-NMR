@@ -4,7 +4,7 @@ A compact Time-Domain Nuclear Magnetic Resonance (TD-NMR) system. The system is 
 
 
 <p align="center">
-<img src="media/NMR_system(0.4).jpg" alt="drawing" width="700"/>
+<img src="media/NMR_system_v0.4.jpg" alt="drawing" width="700"/>
 </p>
 <p align="center">
 Figure 1: Full setup for the TD-NMR system, with key components and subsystems annotated. 

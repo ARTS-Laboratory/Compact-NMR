@@ -1,6 +1,7 @@
 # Compact-NMR (cNMR) - System Development 
+Various developed systems, named after physicists who worked on aspects related to NMR.
 
-## Version 0.1 Rabi
+## Rabi
 * A full-scale development system that uses full-size amplifiers, filters, and switches. 
 
 
@@ -11,7 +12,7 @@
 The compact NMR system.
 </p>
 
-## Version 0.2 - Bloch
+## Bloch
 * A full-scale development that combines amplifiers, filters, and switches onto custom PCB boards.
 
   
@@ -23,7 +24,7 @@ The compact NMR system.
 The compact NMR system.
 </p>
 
-## Version 0.3 - Purcell
+## Purcell
 * A design with temperature regulation removed in favor of a frequency calibration method.
 
 <p align="center">
@@ -33,7 +34,7 @@ The compact NMR system.
 The compact NMR system.
 </p>
 
-## Version 0.4 - Van Hove
+## Van Hove
 * A single control board that includes duplexer, voltage regulator, and amplifier on one control board.
 
 <p align="center">
@@ -43,7 +44,7 @@ The compact NMR system.
 The compact NMR system.
 </p>
 
-## Version 0.5 Dirac
+## Dirac
 * A small and compact design intended for use in a sensor package design that can be easily deployed and retrieved.
 
 <p align="center">

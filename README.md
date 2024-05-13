@@ -59,8 +59,6 @@ This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 Intern
 
 Cite this data as: 
 
-Jacob Martin, Austin R.J. Downey, Win Janvrin, and Angelo Varillas, “Compact-NMR (cNMR),” August 2023. [Online]. Available: URL: https://github.com/ARTS-Laboratory/Compact-NMR
-
 #### Bibtex
 
 @Misc{ARTSLabCompactNmr,    

@@ -64,7 +64,7 @@ Cite this data as:
 @Misc{ARTSLabCompactNmr,    
   author = {ARTS-Lab},  
   howpublished = {GitHub},  
-  title  = {Compact-{NMR}},
+  title  = {Compact-{NMR}},  
   groups = {ARTS-Lab},    
   url    = {https://github.com/ARTS-Laboratory/Compact-NMR},   
 }

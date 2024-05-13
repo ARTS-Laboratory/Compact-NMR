@@ -63,13 +63,14 @@ Jacob Martin, Austin R.J. Downey, Win Janvrin, and Angelo Varillas, “Compact-N
 
 #### Bibtex
 
-@Misc{MartinCompactNmr,  
-  author = {Jacob Martin and Austin {R.J.} Downey and Win Janvrin and Angelo Varillas},  
-  month  = Aug,  
-  title  = {Compact-{NMR}},   
-  groups = {High-Rate-SHM-Working-Group},  
-  url    = {https://github.com/ARTS-Laboratory/Compact-NMR},  
-}  
+@Misc{ARTSLabCompactNmr,    
+  author = {ARTS-Lab},  
+  howpublished = {GitHub},  
+  title  = {Compact-{NMR}},
+  groups = {ARTS-Lab},    
+  url    = {https://github.com/ARTS-Laboratory/Compact-NMR},   
+}
+
 
 
 

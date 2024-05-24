@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name C_Trim_GZD10100)(type KiCad)(uri ${KIPRJMOD}/C_Trim_GZD10100.pretty)(options "")(descr ""))
-)

@@ -54,9 +54,15 @@ The compact NMR system.
 The compact NMR system.
 </p>
 
+## Gill 
+* A control board that is customized to work with the custom FPGA Data acquisition and control system.
 
-
-
+<p align="center">
+<img src="../media/Gill.png" alt="drawing" width="400"/>
+</p>
+<p align="center">
+The compact NMR system.
+</p>
 
 
 

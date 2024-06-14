@@ -1,4 +1,4 @@
-# Compact-NMR (cNMR) - v0.4 - Van Hove
+# Compact-NMR (cNMR) - Van Hove
 
 Main aspects of this version are:
 * Stable version with all components moved onto one control board that includes duplexer, voltage regulator, and amplifier on one control board.

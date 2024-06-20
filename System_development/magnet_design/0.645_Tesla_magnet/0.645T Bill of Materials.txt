@@ -1,0 +1,10 @@
+0.645_Tesla_Magnet // Bill of Materials
+
+Amount:		Description:					Part Name: 		Location:
+1x		3D printed magnet encasing			base magnet encasing	https://osf.io/nd27h/
+2x		3D printed magnet aligner			magnet aligner		https://osf.io/nd27h/
+2x		1018 carbon steel 12.7 x 50.8 x 64 mm		64 mm steel bars	bill of materials
+2x		1018 carbon steel 12.7 x 50.8 x 80 mm		80 mm steel bars	bill of materials
+2x		1018 carbon steel 38.1 x 38.1 x 6 mm		steel magnetic caps	bill of materials
+2x		BX8X88 Magnets					large magents		bill of materials
+8x		BX844 Magnets					small magnets		bill of materials

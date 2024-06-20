@@ -7,11 +7,11 @@ For example, A645 is a magnet of design A with a field strength of 645 milliTesl
 * A - a dual permanent magnet arrangement with a steel yoke.
 * B - A 10-permanent magnet arrangement consisting of 2 primary magnets and 8 alignment magnets.
 
-## A645 Tesla Magnet
+## A645 Magnet
 
-## Axxx Tesla Magnet
+## Axxx Magnet
 
-## Ayyy Tesla Magnet
+## Ayyy Magnet
 
 
 ## Bxxx

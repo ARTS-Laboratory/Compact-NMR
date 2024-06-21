@@ -1,3 +1,3 @@
-# 0.645 Tesla Magnet
+# B645 Tesla Magnet
 
 

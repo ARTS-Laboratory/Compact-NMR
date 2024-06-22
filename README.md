@@ -32,7 +32,7 @@ Figure 4: The magnet array, showing: (a) fully assembled magnet; (b) orientation
 </p>
 
 <p align="center">
-<img src="media/NMR_Probe.jpg" alt="drawing" width="400"/>
+<img src="media/NMR_Probe.png" alt="drawing" width="400"/>
 </p>
 <p align="center">
 Figure 5: NMR probe with key components annotated. 

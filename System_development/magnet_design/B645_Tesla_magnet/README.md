@@ -6,3 +6,10 @@
 <p align="left">
 B645 NMR Magnet: CAD Model
 </p>
+
+<p align="right">
+<img src="b645magnet_photo.jpg" width="400"/>
+</p>
+<p align="left">
+B645 NMR Magnet: Prototype
+</p>

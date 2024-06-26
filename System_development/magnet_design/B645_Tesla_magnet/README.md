@@ -3,6 +3,7 @@
 | Magnet Type | Size                        | Price      | Weight      | Magnetic Field Strength |
 | ----------- | --------------------------- | ---------- | ----------- | ----------------------- |
 |     N42     |    3.5in x 3.0625in x 2in   |   $82.64   |  13.016 oz  |        8146 Gauss       |
+|------------ | --------------------------- | ---------- | ----------- | ----------------------- |
 
 <div style="display: flex;">
   <div style="text-align: center; margin-right: 10px;">

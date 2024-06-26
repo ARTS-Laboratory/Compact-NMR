@@ -1,3 +1,8 @@
 # B645 Tesla Magnet
 
- [alt text](magnet645.png)
+<p align="center">
+<img src="../media/magnet645.png" alt="drawing" width="400"/>
+</p>
+<p align="center">
+B645 Magnet
+</p>

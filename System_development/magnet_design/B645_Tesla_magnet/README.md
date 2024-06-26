@@ -1,12 +1,6 @@
 # B645 Tesla Magnet
 
-<p align="left">
-<img src="magnet645.PNG" width="400"/>
-<p align="right">
-<img src="b645magnet_proto.jpg" width="400"/>
-</p>
-<p align="left">
-B645 NMR Magnet: CAD Model
-<p align="right">
-B645 NMR Magnet: Prototype
-</p>
+<div style="display: flex;">
+  <img src="magnet645.PNG" alt="Description of image 1" style="margin-right: 10px;" width="200">
+  <img src="b645magnet_proto.jpg" alt="Description of image 2" width="200">
+</div>

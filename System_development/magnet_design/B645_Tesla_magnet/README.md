@@ -11,6 +11,6 @@
   </div>
   <div style="text-align: center;">
     <img src="b645magnet_simulation.PNG" width="400">
-    <p>B645 NMR Magnet: FEMM Simulation</p>
+    <p>B645 NMR Magnet: FEM Simulation</p>
   </div>
 </div>

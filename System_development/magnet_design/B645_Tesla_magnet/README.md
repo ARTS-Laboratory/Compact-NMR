@@ -3,6 +3,6 @@
 <p align="left">
 <img src="magnet645.PNG" width="400"/>
 </p>
-<p align="center">
+<p align="left/center">
 B645 NMR Magnet: CAD Model
 </p>

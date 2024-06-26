@@ -4,5 +4,5 @@
 <img src="magnet645.PNG" width="700"/>
 </p>
 <p align="left">
-*B645 NMR Magnet*
+_B645 NMR Magnet_
 </p>

@@ -2,7 +2,7 @@
 
 <div style="display: flex;">
   <div style="text-align: center; margin-right: 10px;">
-    <img src="b645magnet_proto.jpg" width="400">
+    <img src="media/b645magnet_proto.jpg" width="400">
     <p>B645 NMR Magnet: Prototype</p>
   </div>
   <div style="text-align: center;">

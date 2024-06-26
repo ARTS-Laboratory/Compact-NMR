@@ -1,5 +1,9 @@
 # B645 Tesla Magnet
 
+| Materials Used | Size | Price | Weight | Magnetic Field Strength |
+| -------------- | ---- | ----- | ------ | ----------------------- |
+
+
 <div style="display: flex;">
   <div style="text-align: center; margin-right: 10px;">
     <img src="media/B645magnet_proto.jpg" width="400">

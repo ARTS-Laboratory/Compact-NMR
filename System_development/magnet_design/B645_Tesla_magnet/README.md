@@ -3,7 +3,7 @@
 | Magnet Type | Size                        | Price      | Weight      | Magnetic Field Strength |          Magnet Link         |
 | ----------- | --------------------------- | ---------- | ----------- | ----------------------- | ---------------------------- |
 |      B      |    3.5in x 3.0625in x 2in   |   $182.64  |  13.016 oz  |      0.8146 Tesla       | https://bit.ly/BX8X88Magnets |
-                                                                                                 | https://bit.ly/BX844Magnets  |
+|             |                             |            |             |                         | https://bit.ly/BX844Magnets  |
 
 
 <div style="display: flex;">

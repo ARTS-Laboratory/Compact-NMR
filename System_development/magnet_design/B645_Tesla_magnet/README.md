@@ -6,7 +6,7 @@
 
 ## Magnet design, simulation, and product
 The permanent magnet assembly uses:
-* BX8X88: https://bit.ly/BX8X88Magnets |
+* BX8X88: https://bit.ly/BX8X88Magnets 
 * BX844:  https://bit.ly/BX844Magnets 
 
 

@@ -12,27 +12,27 @@ The permanent magnet assembly uses:
 
   <div style="text-align: center;">
     <img src="media/CAD_Model.PNG" width="400">
-    <p>B645 NMR Magnet: CAD Model</p>
+    <p>CAD model of the magnet design</p>
   </div>
-CAD model of the magnet design
+
   
   <div style="text-align: center;">
     <img src="media/Simulation.PNG" width="400">
-    <p>B645 NMR Magnet: FEMM Simulation</p>
+    <p>2D Finite element magneic model and simulation</p>
   </div>
-2D finite element magneic model
+
   
   <div style="text-align: center;">
     <img src="media/Polarization_Plot.PNG" width="400">
-    <p>B645 NMR Magnet: Polarization Plot</p>
+    <p>Polarization plot of the magnet</p>
   </div>
 </div>
-Polarization plot of the magnet
+
 
 <div style="display: flex;">
   <div style="text-align: center; margin-right: 10px;">
     <img src="media/Prototype.jpg" width="400">
-    <p>B645 NMR Magnet: Prototype</p>
+    <p>Assembled magnet</p>
   </div>
-Assembled magnet
+
   

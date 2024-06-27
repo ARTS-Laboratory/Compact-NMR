@@ -12,11 +12,15 @@
     <p>B645 NMR Magnet: Prototype</p>
   </div>
   <div style="text-align: center;">
-    <img src="media/CAD_Model.PNG" width="400" height="360">
+    <img src="media/CAD_Model.PNG" width="400">
     <p>B645 NMR Magnet: CAD Model</p>
   </div>
   <div style="text-align: center;">
     <img src="media/Simulation.PNG" width="400">
     <p>B645 NMR Magnet: FEMM Simulation</p>
+  </div>
+  <div style="text-align: center;">
+    <img src="media/Polarization_Plot.PNG" width="400">
+    <p>B645 NMR Magnet: Polarization Plot</p>
   </div>
 </div>

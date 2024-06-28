@@ -33,6 +33,3 @@ The permanent magnet assembly uses:
     <img src="media/Prototype.jpg" width="400">
     <p>Assembled magnet</p>
   </div>
-</div>
-
-  

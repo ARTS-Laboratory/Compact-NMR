@@ -29,9 +29,10 @@ The permanent magnet assembly uses:
 </div>
 
 
-<div style="text-align: center;">
+  <div style="text-align: center;">
     <img src="media/Prototype.jpg" width="400">
     <p>Assembled magnet</p>
   </div>
+</div>
 
   

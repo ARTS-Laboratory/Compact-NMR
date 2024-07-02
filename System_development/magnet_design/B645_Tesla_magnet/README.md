@@ -17,7 +17,7 @@ The permanent magnet assembly uses:
 
   
   <div style="text-align: center;">
-    <img src="media/Simulation.PNG" width="400">
+    <img src="media/FEMSimulation.PNG" width="400">
     <p>2D Finite element magneic model and simulation</p>
   </div>
 

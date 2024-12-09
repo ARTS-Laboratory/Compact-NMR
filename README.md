@@ -69,6 +69,12 @@ Cite this data as:
   url    = {https://github.com/ARTS-Laboratory/Compact-NMR},   
 }
 
+<p align="center">
+<img src="media/QR-code.png" alt="drawing" width="200"/>
+</p>
+<p align="center">
+QR code for repo.
+</p>
 
 
 

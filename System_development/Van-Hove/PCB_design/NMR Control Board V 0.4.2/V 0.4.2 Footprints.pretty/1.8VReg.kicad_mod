@@ -1,0 +1,246 @@
+(footprint "1.8VReg"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "SOT-353, SC-70-5, Handsoldering")
+	(tags "SOT-353 SC-70-5 Handsoldering")
+	(property "Reference" "REF**"
+		(at 0 -2.25 0)
+		(layer "F.SilkS")
+		(uuid "0f90565a-181f-4357-9f17-ed0de11f5d73")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "1.8VReg"
+		(at 0 2 180)
+		(layer "F.Fab")
+		(uuid "0b289689-ec5b-415f-8897-6b6ebfce7968")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "1.8VReg"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2d774517-6bdf-407a-b4c7-7b7b91b953d8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "009c9041-9f99-43f1-82c0-7c61ef47c7e5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "85668383-96d7-4f7b-af74-d7bfa4c5b3d7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.71 -1.16)
+		(end 0.7 -1.16)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "59e9e5e9-0904-4b70-927c-a838b1e10bba")
+	)
+	(fp_line
+		(start -0.7 1.16)
+		(end 0.7 1.16)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "858f4046-3a4c-451f-8492-c380a0eb9a3b")
+	)
+	(fp_poly
+		(pts
+			(xy -1.08 -1.11) (xy -1.32 -1.44) (xy -0.84 -1.44) (xy -1.08 -1.11)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "95230789-fec2-49f2-9b10-fef16a50cb63")
+	)
+	(fp_line
+		(start -3 -1.4)
+		(end -3 1.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "29feabd1-50b9-48ee-bd4d-e01eb8b128fa")
+	)
+	(fp_line
+		(start -3 -1.4)
+		(end 3 -1.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e373bdfa-5138-4ff0-8d74-e40200e75a01")
+	)
+	(fp_line
+		(start -3 1.4)
+		(end 3 1.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "abb5f194-8af5-48b4-bb46-1e871aa68563")
+	)
+	(fp_line
+		(start 3 1.4)
+		(end 3 -1.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "49c955f6-3686-4005-a7d5-fa811eda9f45")
+	)
+	(fp_line
+		(start -0.675 -0.6)
+		(end -0.675 1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "213b7f27-709e-4dd7-a9aa-2ad0aeacb768")
+	)
+	(fp_line
+		(start -0.175 -1.1)
+		(end -0.675 -0.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6b63e094-f27a-4035-b259-ef82e45cf042")
+	)
+	(fp_line
+		(start 0.675 -1.1)
+		(end -0.175 -1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bffd0372-1228-4ef6-bce8-c14f062d0c6b")
+	)
+	(fp_line
+		(start 0.675 -1.1)
+		(end 0.675 1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a8fc7557-4dfa-4eed-a7f2-4bb1a4bfc404")
+	)
+	(fp_line
+		(start 0.675 1.1)
+		(end -0.675 1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ada7344d-d64b-45d0-8600-037c4db5c09f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 90)
+		(layer "F.Fab")
+		(uuid "dcfeef94-6074-442a-b0ce-921b80450cfd")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.075)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.54 -0.65)
+		(size 1.92 0.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "faf64020-e2b3-4242-a6d4-29b69d6891b8")
+	)
+	(pad "2" smd roundrect
+		(at -1.54 0)
+		(size 1.92 0.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "e3f97da7-3c2e-4aa9-8b80-762ee026f3a5")
+	)
+	(pad "3" smd roundrect
+		(at -1.54 0.65)
+		(size 1.92 0.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "28d40f6c-f623-4f30-8712-a9800974219a")
+	)
+	(pad "4" smd roundrect
+		(at 1.54 0.65)
+		(size 1.92 0.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "e84381f8-da38-4860-b5f2-8594313b7616")
+	)
+	(pad "5" smd roundrect
+		(at 1.54 -0.65)
+		(size 1.92 0.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "3a94d40a-0379-44af-9996-bf79d54c0aa3")
+	)
+	(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-353_SC-70-5.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,3 +1,3 @@
-# 0.xxx Tesla Magnet
+# A Type Magnet Simulations
 
 

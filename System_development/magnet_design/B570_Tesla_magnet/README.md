@@ -34,12 +34,13 @@ The permanent magnet assembly uses:
     <p>Assembled magnet</p>
   </div>
 
-    <div style="text-align: center; align-items:center;">
+  <div style="text-align: center; align-items:center;">
     <img src="media/Prototype.jpg" width="400">
     <p>Full vertical case, magnet, and tray assembly</p>
   </div>
-
-      <div style="text-align: center; align-items:center;">
+  
+  <div style="text-align: center; align-items:center;">
     <img src="media/Prototype.jpg" width="400">
     <p>Full horizontal case, magnet, and tray assembly</p>
   </div>
+  

@@ -10,26 +10,36 @@ The permanent magnet assembly uses:
 * BX844:  https://bit.ly/BX844Magnets 
 
 
-  <div style="text-align: center;">
+  <div style="text-align: center; align-items:center;">
     <img src="media/CAD_Model.PNG" width="400">
     <p>CAD model of the magnet design</p>
   </div>
 
   
-  <div style="text-align: center;">
+  <div style="text-align: center; align-items:center;">
     <img src="media/FEMSimulation.PNG" width="400">
     <p>2D Finite element magneic model and simulation</p>
   </div>
 
   
-  <div style="text-align: center;">
+  <div style="text-align: center; align-items:center;">
     <img src="media/Polarization_Plot.PNG" width="400">
     <p>Polarization plot of the magnet</p>
   </div>
 </div>
 
 
-  <div style="text-align: center;">
+  <div style="text-align: center; align-items:center;">
     <img src="media/Prototype.jpg" width="400">
     <p>Assembled magnet</p>
+  </div>
+
+    <div style="text-align: center; align-items:center;">
+    <img src="media/Prototype.jpg" width="400">
+    <p>Full vertical case, magnet, and tray assembly</p>
+  </div>
+
+      <div style="text-align: center; align-items:center;">
+    <img src="media/Prototype.jpg" width="400">
+    <p>Full horizontal case, magnet, and tray assembly</p>
   </div>

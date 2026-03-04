@@ -6,7 +6,7 @@
 
 ## Magnet design, simulation, and product
 The permanent magnet assembly uses:
-* BX8X88: https://www.kjmagnetics.com/dz0x0-neodymium-disc-magnet 
+* DZ0X0: https://www.kjmagnetics.com/dz0x0-neodymium-disc-magnet 
 * Carbon Steel Rectangular Bar: 1018: https://www.grainger.com/product/Carbon-Steel-Rectangular-Bar-2HHT9?opr=APPD&analytics=altItems_2HHV2&position=1
 
   <div style="text-align: center;">

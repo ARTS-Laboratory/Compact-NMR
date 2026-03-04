@@ -1,4 +1,4 @@
-# B645 Tesla Magnet
+# A645 Tesla Magnet
 
 | Magnet Type | Size                        | Price      | Weight    | Magnetic Field Strength |  
 | ----------- | --------------------------- | ---------- | --------- | ----------------------- | 

@@ -21157,7 +21157,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "NMR Control V 0.4.4\nJake Martin\nAngelo Varillas\nWinford Janvrin\nDaniel Hancock\nAsifuzzaman Khan\nJosh Hager"
+	(gr_text "NMR Control V 0.4.4\nJake Martin\nAngelo Varillas\nWinford\nUsman Khan \nDaniel Hancock\nJosh Hager"
 		(at 108 74.5 0)
 		(layer "F.SilkS")
 		(uuid "8a95045f-69e6-498c-8440-90da12796119")

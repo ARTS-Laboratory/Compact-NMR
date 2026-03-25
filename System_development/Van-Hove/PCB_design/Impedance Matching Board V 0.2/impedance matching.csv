@@ -1,0 +1,4 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"CM";"C_Rect_L7.0mm_W6.0mm_P5.00mm";1;"C_Variable";;;
+2;"CT";"C_Trim_GZD10100";1;"C_Trim_3_Leg";;;
+3;"J1,J2";"SMA_Amphenol_132203-12_Horizontal";2;"Conn_Coaxial";;;

@@ -1,0 +1,21 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,(6.0.10)*%
+%TF.CreationDate,2023-04-04T11:29:01-04:00*%
+%TF.ProjectId,Coil_Connector_V3_selfprint,436f696c-5f43-46f6-9e6e-6563746f725f,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Paste,Bot*%
+%TF.FilePolarity,Positive*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW (6.0.10)) date 2023-04-04 11:29:01*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10R,1.350000X4.200000*%
+G04 APERTURE END LIST*
+D10*
+%TO.C,J1*%
+X136225000Y-99985500D03*
+X141875000Y-99985500D03*
+%TD*%
+M02*

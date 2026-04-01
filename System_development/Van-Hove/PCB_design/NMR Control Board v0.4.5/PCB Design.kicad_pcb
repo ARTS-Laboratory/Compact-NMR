@@ -7,6 +7,11 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "NMR Control Board")
+		(date "2026-04-01")
+		(rev "v0.4.5")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -21225,7 +21230,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "NMR Control v 0.4.5"
+	(gr_text "NMR Control v0.4.5"
 		(at 107.5 65 0)
 		(layer "F.SilkS")
 		(uuid "838741dd-4dc0-4b85-93ee-ed913249505a")

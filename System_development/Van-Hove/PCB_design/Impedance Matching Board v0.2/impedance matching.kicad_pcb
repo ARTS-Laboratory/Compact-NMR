@@ -7,6 +7,11 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "NMR Impedance Matching Board")
+		(date "2026-04-01")
+		(rev "v0.2")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -1460,7 +1465,7 @@
 		(layer "Edge.Cuts")
 		(uuid "bc136176-7bca-42bf-bbb0-4e1a4a0a07fd")
 	)
-	(gr_text "Impedence Matching Board V0.2"
+	(gr_text "Impedence Matching Board v0.2"
 		(at 148.5 115 270)
 		(layer "B.SilkS")
 		(uuid "88b485e3-d047-4115-b4b9-05579f0c1c42")

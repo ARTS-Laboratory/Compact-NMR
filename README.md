@@ -67,6 +67,7 @@ Cite this data as:
   title  = {Compact-{NMR}},  
   groups = {ARTS-Lab},    
   url    = {https://github.com/ARTS-Laboratory/Compact-NMR},   
+  notes  = {Accessed: Month dd, yyyy},   
 }
 
 <p align="center">

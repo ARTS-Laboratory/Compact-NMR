@@ -3,3 +3,29 @@
 *.lck
 
 
+ Microsoft Office temporary files
+~$*
+*.tmp
+*.temp
+
+# Excel temporary/autorecovery files
+*.xlk
+*.xls~
+*.xlsx~
+*.xlsm~
+*.xlsb~
+
+# Word temporary/autorecovery files
+*.wbk
+*.asd
+*.doc~
+*.docx~
+
+# PowerPoint temporary/autorecovery files
+*.ppt~
+*.pptx~
+
+# macOS metadata files, if applicable
+.DS_Store
+.AppleDouble
+.LSOverride

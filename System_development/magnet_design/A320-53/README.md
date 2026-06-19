@@ -8,3 +8,14 @@
 The permanent magnet assembly uses:
 * ?? BZ0Z04-N52: https://www.kjmagnetics.com/bz0z04-n52-neodymium-block-magnet
 
+## Magnet design, simulation, and product
+
+  <div style="text-align: center;">
+    <img src="media/A650_Magnet.jpg" width="400">
+    <p>Assembled magnet</p>
+  </div>
+  
+  <div style="text-align: center;">
+    <img src="media/FEMSimulation.PNG" width="400">
+    <p>2D Finite element magneic model and simulation</p>
+  </div>

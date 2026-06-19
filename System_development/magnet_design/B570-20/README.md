@@ -10,37 +10,51 @@ The permanent magnet assembly uses:
 * BX844:  https://bit.ly/BX844Magnets 
 
 
-  <div style="text-align: center; align-items:center;">
-    <img src="media/CAD_Model.PNG" width="400">
-    <p>CAD model of the magnet design</p>
-  </div>
+<div align="center">
 
-  
-  <div style="text-align: center; align-items:center;">
-    <img src="media/FEMSimulation.PNG" width="400">
-    <p>2D Finite element magneic model and simulation</p>
-  </div>
+  <figure>
+    <img src="media/CAD_Model.jpg" width="400" alt="CAD model of the magnet design"> <br>
+    <figcaption><strong>CAD model:</strong> 3D CAD rendering of the permanent magnet assembly.</figcaption>
+  </figure>
 
-  
-  <div style="text-align: center; align-items:center;">
-    <img src="media/Polarization_Plot.PNG" width="400">
-    <p>Polarization plot of the magnet</p>
-  </div>
+  <br>
+
+  <figure>
+    <img src="media/FEMSimulation.jpg" width="400" alt="2D finite element magnetic model and simulation"> <br>
+    <figcaption><strong>Finite element simulation:</strong> 2D magnetic field model used to evaluate the magnet assembly design.</figcaption>
+  </figure>
+
+  <br>
+
+  <figure>
+    <img src="media/polarization_plot.jpg" width="400" alt="Polarization plot of the magnet"> <br>
+    <figcaption><strong>Polarization plot:</strong> Magnet polarization layout showing the orientation of the magnetic elements.</figcaption>
+  </figure>
+
+  <br>
+
+  <figure>
+    <img src="media/prototype.jpg" width="400" alt="Assembled magnet prototype"> <br>
+    <figcaption><strong>Prototype:</strong> Assembled physical magnet prototype.</figcaption>
+  </figure>
+
+  <br>
+
+  <figure>
+    <img src="media/magnetic_field_plot.jpg" width="400" alt="Measured magnetic field plot"> <br>
+    <figcaption><strong>Magnetic field map:</strong> Measured magnetic field distribution across the magnet region.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="media/vertical_assembly.jpg" width="400" alt="Full vertical case, magnet, and tray assembly"> <br>
+    <figcaption><strong>Vertical assembly:</strong> Full vertical case, magnet, and tray assembly.</figcaption>
+  </figure>
+
+  <br>
+
+  <figure>
+    <img src="media/horizontal_assembly.jpg" width="400" alt="Full horizontal case, magnet, and tray assembly"> <br>
+    <figcaption><strong>Horizontal assembly:</strong> Full horizontal case, magnet, and tray assembly.</figcaption>
+  </figure>
+
 </div>
-
-
-  <div style="text-align: center; align-items:center;">
-    <img src="media/Prototype.jpg" width="400">
-    <p>Assembled magnet</p>
-  </div>
-
-  <div style="text-align: center; align-items:center;">
-    <img src="media/Vertical_Assembly_1.jpeg" width="400">
-    <p>Full vertical case, magnet, and tray assembly</p>
-  </div>
-  
-  <div style="text-align: center; align-items:center;">
-    <img src="media/Horizontal_Assembly_1.jpeg" width="400">
-    <p>Full horizontal case, magnet, and tray assembly</p>
-  </div>
-  

@@ -10,31 +10,40 @@ The permanent magnet assembly uses:
 * BX844:  https://bit.ly/BX844Magnets 
 
 
-  <div style="text-align: center;">
-    <img src="media/CAD_Model.jpg" width="400">
-    <p>CAD model of the magnet design</p>
-  </div>
 
-  
-  <div style="text-align: center;">
-    <img src="media/FEMSimulation.jpg" width="400">
-    <p>2D Finite element magneic model and simulation</p>
-  </div>
+<div align="center">
 
-  
-  <div style="text-align: center;">
-    <img src="media/Polarization_Plot.jpg" width="400">
-    <p>Polarization plot of the magnet</p>
-  </div>
+  <figure>
+    <img src="media/CAD_Model.jpg" width="400" alt="CAD model of the magnet design">
+    <figcaption><strong>CAD model:</strong> 3D CAD rendering of the permanent magnet assembly.</figcaption>
+  </figure>
+
+  <br>
+
+  <figure>
+    <img src="media/FEMSimulation.jpg" width="400" alt="2D finite element magnetic model and simulation">
+    <figcaption><strong>Finite element simulation:</strong> 2D magnetic field model used to evaluate the magnet assembly design.</figcaption>
+  </figure>
+
+  <br>
+
+  <figure>
+    <img src="media/Polarization_Plot.jpg" width="400" alt="Polarization plot of the magnet">
+    <figcaption><strong>Polarization plot:</strong> Magnet polarization layout showing the orientation of the magnetic elements.</figcaption>
+  </figure>
+
+  <br>
+
+  <figure>
+    <img src="media/Prototype.jpg" width="400" alt="Assembled magnet prototype">
+    <figcaption><strong>Prototype:</strong> Assembled physical magnet prototype.</figcaption>
+  </figure>
+
+  <br>
+
+  <figure>
+    <img src="media/magnetic_field_plot.jpg" width="400" alt="Measured magnetic field plot">
+    <figcaption><strong>Magnetic field map:</strong> Measured magnetic field distribution across the magnet region.</figcaption>
+  </figure>
+
 </div>
-
-
-  <div style="text-align: center;">
-    <img src="media/Prototype.jpg" width="400">
-    <p>Assembled magnet</p>
-  </div>
-
-  <div style="text-align: center;">
-    <img src="media/magnetic_field_plot.jpg" width="400">
-    <p>Assembled magnet</p>
-  </div>

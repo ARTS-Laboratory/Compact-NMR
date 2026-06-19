@@ -15,10 +15,6 @@ For example, A650-10 is a magnet of design "A" with a nominal field strength of 
 
 ## [A650-88 Magnet](A650-88)
 
-## [A650-xx Magnet](A650-xx)
-
-## [A6xx-xx Magnet](A650-xx)
-
 ## [B300-20 Magnet](B300-20)
 
 ## [B570-20 Magnet](B570-20)

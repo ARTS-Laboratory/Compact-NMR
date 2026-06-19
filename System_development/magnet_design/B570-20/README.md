@@ -13,21 +13,21 @@ The permanent magnet assembly uses:
 <div align="center">
 
   <figure>
-    <img src="media/CAD_Model.jpg" width="400" alt="CAD model of the magnet design"> <br>
+    <img src="media/CAD_model.jpg" width="400" alt="CAD model of the magnet design"> <br>
     <figcaption><strong>CAD model:</strong> 3D CAD rendering of the permanent magnet assembly.</figcaption>
   </figure>
 
   <br>
 
   <figure>
-    <img src="media/FEMSimulation.jpg" width="400" alt="2D finite element magnetic model and simulation"> <br>
+    <img src="media/FEM_simulation.jpg" width="400" alt="2D finite element magnetic model and simulation"> <br>
     <figcaption><strong>Finite element simulation:</strong> 2D magnetic field model used to evaluate the magnet assembly design.</figcaption>
   </figure>
 
   <br>
 
   <figure>
-    <img src="media/polarization_plot.jpg" width="400" alt="Polarization plot of the magnet"> <br>
+    <img src="media/polarization.jpg" width="400" alt="Polarization plot of the magnet"> <br>
     <figcaption><strong>Polarization plot:</strong> Magnet polarization layout showing the orientation of the magnetic elements.</figcaption>
   </figure>
 

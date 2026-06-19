@@ -44,6 +44,8 @@ The permanent magnet assembly uses:
     <figcaption><strong>Magnetic field map:</strong> Measured magnetic field distribution across the magnet region.</figcaption>
   </figure>
 
+  <br>
+  
   <figure>
     <img src="media/vertical_assembly.jpg" width="400" alt="Full vertical case, magnet, and tray assembly"> <br>
     <figcaption><strong>Vertical assembly:</strong> Full vertical case, magnet, and tray assembly.</figcaption>

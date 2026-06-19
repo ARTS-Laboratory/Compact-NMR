@@ -11,19 +11,19 @@ The permanent magnet assembly uses:
 
 
   <div style="text-align: center;">
-    <img src="media/CAD_Model.PNG" width="400">
+    <img src="media/CAD_Model.jpg" width="400">
     <p>CAD model of the magnet design</p>
   </div>
 
   
   <div style="text-align: center;">
-    <img src="media/FEMSimulation.PNG" width="400">
+    <img src="media/FEMSimulation.jpg" width="400">
     <p>2D Finite element magneic model and simulation</p>
   </div>
 
   
   <div style="text-align: center;">
-    <img src="media/Polarization_Plot.PNG" width="400">
+    <img src="media/Polarization_Plot.jpg" width="400">
     <p>Polarization plot of the magnet</p>
   </div>
 </div>

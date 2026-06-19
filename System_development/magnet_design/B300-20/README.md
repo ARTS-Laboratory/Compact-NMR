@@ -14,35 +14,35 @@ The permanent magnet assembly uses:
 <div align="center">
 
   <figure>
-    <img src="media/CAD_Model.jpg" width="400" alt="CAD model of the magnet design">
+    <img src="media/CAD_Model.jpg" width="400" alt="CAD model of the magnet design"> <br>
     <figcaption><strong>CAD model:</strong> 3D CAD rendering of the permanent magnet assembly.</figcaption>
   </figure>
 
   <br>
 
   <figure>
-    <img src="media/FEMSimulation.jpg" width="400" alt="2D finite element magnetic model and simulation">
+    <img src="media/FEMSimulation.jpg" width="400" alt="2D finite element magnetic model and simulation"> <br>
     <figcaption><strong>Finite element simulation:</strong> 2D magnetic field model used to evaluate the magnet assembly design.</figcaption>
   </figure>
 
   <br>
 
   <figure>
-    <img src="media/Polarization_Plot.jpg" width="400" alt="Polarization plot of the magnet">
+    <img src="media/Polarization_Plot.jpg" width="400" alt="Polarization plot of the magnet"> <br>
     <figcaption><strong>Polarization plot:</strong> Magnet polarization layout showing the orientation of the magnetic elements.</figcaption>
   </figure>
 
   <br>
 
   <figure>
-    <img src="media/Prototype.jpg" width="400" alt="Assembled magnet prototype">
+    <img src="media/Prototype.jpg" width="400" alt="Assembled magnet prototype"> <br>
     <figcaption><strong>Prototype:</strong> Assembled physical magnet prototype.</figcaption>
   </figure>
 
   <br>
 
   <figure>
-    <img src="media/magnetic_field_plot.jpg" width="400" alt="Measured magnetic field plot">
+    <img src="media/magnetic_field_plot.jpg" width="400" alt="Measured magnetic field plot"> <br>
     <figcaption><strong>Magnetic field map:</strong> Measured magnetic field distribution across the magnet region.</figcaption>
   </figure>
 

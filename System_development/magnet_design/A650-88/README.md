@@ -2,7 +2,7 @@
 
 | Magnet Type | Size                        | Price      | Weight    | Magnetic Field Strength |  
 | ----------- | --------------------------- | ---------- | --------- | ----------------------- | 
-|      A      | 3 Inch (Diameter) x 1 Inch  |   $207.71  |  30.7 oz  |        0.65 Tesla       | 
+|      A      | 3 Inch (Diameter) x 1 Inch  |   $207.71  |  56.8 lbs |        0.65 Tesla       | 
 
 ## Magnet design, simulation, and product
 The permanent magnet assembly uses:

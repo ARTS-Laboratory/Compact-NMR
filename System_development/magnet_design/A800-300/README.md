@@ -1,8 +1,8 @@
 # A800 Tesla Magnet
 
-| Magnet Type | Size                          | Price      | Weight    | Magnetic Field Strength |  
-| ----------- | ----------------------------- | ---------- | --------- | ----------------------- | 
-|      A      | 3 Inch (Diameter) x 1.5 Inch  |   $413.66  |  56.8 lb. |        0.800 Tesla       | 
+| Magnet Type | Size                          | Weight    | Magnetic Field Strength |  
+| ----------- | ----------------------------- | --------- | ----------------------- | 
+|      A      | 3 Inch (Diameter) x 1.5 Inch  |  56.8 lb. |        0.800 Tesla       | 
 
 ## Magnet design, simulation, and product
 The permanent magnet assembly uses:

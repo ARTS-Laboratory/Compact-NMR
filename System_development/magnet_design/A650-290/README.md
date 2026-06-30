@@ -6,7 +6,7 @@
 
 ## Magnet design, simulation, and product
 The permanent magnet assembly uses:
-* ?? BZ0Z04-N52: https://www.kjmagnetics.com/bz0z04-n52-neodymium-block-magnet
+* DZ0X0-N42: https://www.kjmagnetics.com/dz0x0-neodymium-disc-magnet
 
 
 <div align="center">

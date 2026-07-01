@@ -21,3 +21,5 @@ For example, A650-10 is a magnet of design "A" with a nominal field strength of 
 
 ## [B570-20 Magnet](B570-20)
 
+* This project uses Inventor 2025 for CAD work
+

@@ -1,12 +1,12 @@
-\# A650 Base Case CAD Model
+# A650 Base Case CAD Model
 
 
 
-\## Purpose
+## Purpose
 
 
 
-\- Base casing for the A650.
+- Base casing for the A650.
 
 
 

@@ -15,6 +15,7 @@
   <br>
 
 <div align="left">
+
 ## 2. Side Plates Assembly Tool
 
 **Purpose**

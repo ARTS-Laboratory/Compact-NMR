@@ -13,3 +13,21 @@
   </figure>
 
   <br>
+
+<div align="center">
+
+  <figure>
+    <img src="assembly_media/plate_assembly.jpg" width="400" alt="CAD model of the plate assembly"> <br>
+    <figcaption><strong>CAD model:</strong> 3D CAD rendering of the magnet assembly.</figcaption>
+  </figure>
+
+  <br>
+
+<div align="center">
+
+  <figure>
+    <img src="assembly_media/plate_assembly2.jpg" width="400" alt="CAD model of the second plate assembly"> <br>
+    <figcaption><strong>CAD model:</strong> 3D CAD rendering of the magnet assembly.</figcaption>
+  </figure>
+
+  <br>

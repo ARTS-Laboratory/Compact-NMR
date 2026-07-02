@@ -14,6 +14,11 @@
 
   <br>
 
+## 2. Side Plates Assembly Tool
+
+**Purpose**
+- Used to assemble the metal bars that goes around the magnet in a symmetric way to confine the magnetic field of the magnet.
+
 <div align="center">
 
   <figure>

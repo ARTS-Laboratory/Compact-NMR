@@ -1,4 +1,4 @@
-# A650-290Tesla Magnet
+# A650-290 Tesla Magnet
 
 | Magnet Type | Size                        | Price      | Weight    | Magnetic Field Strength |  
 | ----------- | --------------------------- | ---------- | --------- | ----------------------- | 
